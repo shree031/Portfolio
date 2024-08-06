@@ -1,0 +1,136 @@
+body {
+    background: lavender;
+    overflow-x: hidden;
+    /*font-family: cursive;*/
+
+    font-size: 22px;
+}
+
+h3 {
+    padding-inline: 30px ;
+}
+
+h3 a:hover {
+    color: #9c32f4;
+    text-shadow: -4px 2px #D0B4FD;
+    border-bottom: 3px solid #9c32f4 !important;
+    text-decoration: none;
+}
+
+h1 span {
+    border-radius: 25px;
+    background: #b46dffa1;
+    padding: 14px;
+    box-shadow: -10px 10px 10px 4px #00000059;
+}
+
+/*Width*/
+.w-50 {
+    width: 50%;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+/* Font-size */
+.fs-60 {
+    font-size: 60px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-22 {
+    font-size: 22px;
+}
+
+.fs-130 {
+    font-size: 130px;
+}
+
+#circle-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgb(215, 179, 251);
+    background: linear-gradient(180deg, rgba(215, 179, 251, 1) 0%, rgba(246, 167, 243, 1) 100%);
+}
+
+.skill img {
+    height: 50px;
+    width: 170px;
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 2px 2px 3px 1px black
+}
+
+.arrow {
+    margin-left: 100px;
+    padding-left: 100px;
+    font-size: 70px;
+    text-shadow: 5px 0px darkgrey;
+}
+
+.move-left {
+    margin-left: 300px;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.nav-item {
+    color: black;
+}
+
+.footer {
+    background: rgb(215, 179, 251);
+    background: linear-gradient(180deg, rgba(215, 179, 251, 1) 0%, rgba(246, 167, 243, 1) 100%);
+}
+.hello{
+    font-family: "Grey Qo", cursive;
+    font-size: 180px !important;
+}
+.icon-style i {
+    font-size: 40px;
+    display: inline-block;
+    color: black;
+    background: #e2aff8;
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: 10px 22px;
+    margin: 10px;
+}
+
+.icon-style i:hover {
+    background: black;
+    color: #e3aef8;
+}
+
+
+.border-bottom {
+    border-bottom: 3px solid !important;
+    padding-inline: 10px;
+}
+
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cursive {
+    font-family: cursive;
+}
