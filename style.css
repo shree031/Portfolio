@@ -7,7 +7,7 @@ body {
 }
 
 h3 {
-    padding-inline: 30px ;
+    padding-inline: 30px;
 }
 
 h3 a:hover {
@@ -98,10 +98,12 @@ h1 span {
     background: rgb(215, 179, 251);
     background: linear-gradient(180deg, rgba(215, 179, 251, 1) 0%, rgba(246, 167, 243, 1) 100%);
 }
-.hello{
+
+.hello {
     font-family: "Grey Qo", cursive;
     font-size: 180px !important;
 }
+
 .icon-style i {
     font-size: 40px;
     display: inline-block;
@@ -133,4 +135,45 @@ h1 span {
 
 .cursive {
     font-family: cursive;
+}
+
+.h-500 {
+    height: 500px;
+}
+
+.h-1000 {
+    height: 1000px;
+}
+
+.w-500 {
+    width: 500px;
+}
+
+.carousel-item img {
+    height: 450px !important;
+    padding: 80px 100px 100px;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(162, 87, 227);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border-radius: 0px 0px 34px 34px;
+}
+
+.carousel-item:hover .carousel-caption {
+    opacity: 0.7;
+}
+
+.box {
+    background: #9c32f440;
+    border-radius: 34px;
+    width: 682px;
 }
