@@ -1,9 +1,8 @@
 body {
-    background: lavender;
+    background: wheat;
     overflow-x: hidden;
-    /*font-family: cursive;*/
-
     font-size: 22px;
+    color: black;
 }
 
 h3 {
@@ -11,17 +10,19 @@ h3 {
 }
 
 h3 a:hover {
-    color: #9c32f4;
-    text-shadow: -4px 2px #D0B4FD;
-    border-bottom: 3px solid #9c32f4 !important;
+    color: crimson;
+    font-weight: 800;
+    text-shadow: -4px 2px #dc35455c;
+    border-bottom: 3px solid crimson !important;
     text-decoration: none;
 }
 
 h1 span {
     border-radius: 25px;
-    background: #b46dffa1;
+    background: crimson;
     padding: 14px;
-    box-shadow: -10px 10px 10px 4px #00000059;
+    box-shadow: -10px 10px 10px 4px #721c24;
+    color: white;
 }
 
 /*Width*/
@@ -35,6 +36,10 @@ h1 span {
 
 .w-60 {
     width: 60%;
+}
+
+.w-700 {
+    width: 700px;
 }
 
 /* Font-size */
@@ -63,16 +68,18 @@ h1 span {
 .circle {
     position: absolute;
     border-radius: 50%;
-    background: rgb(215, 179, 251);
-    background: linear-gradient(180deg, rgba(215, 179, 251, 1) 0%, rgba(246, 167, 243, 1) 100%);
+    background: rgb(255, 218, 185);
+    background: linear-gradient(90deg, crimson 0%, rgba(189, 54, 47, 0.62) 100%);
 }
 
-.skill img {
-    height: 50px;
-    width: 170px;
-    border-radius: 8px;
-    margin: 10px;
-    box-shadow: 2px 2px 3px 1px black
+.skills {
+    margin-inline: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.skills img {
+    height: 80px;
 }
 
 .arrow {
@@ -95,20 +102,21 @@ h1 span {
 }
 
 .footer {
-    background: rgb(215, 179, 251);
-    background: linear-gradient(180deg, rgba(215, 179, 251, 1) 0%, rgba(246, 167, 243, 1) 100%);
+    background: linear-gradient(180deg, #dc3545 0%, #721c24);
+    color: white;
 }
 
 .hello {
     font-family: "Grey Qo", cursive;
     font-size: 180px !important;
+    text-shadow: 6px 4px #80808073;;
 }
 
 .icon-style i {
     font-size: 40px;
     display: inline-block;
     color: black;
-    background: #e2aff8;
+    background: #dc3545;
     border-radius: 50%;
     border: 1px solid black;
     padding: 10px 22px;
@@ -117,7 +125,7 @@ h1 span {
 
 .icon-style i:hover {
     background: black;
-    color: #e3aef8;
+    color: #dc3545;
 }
 
 
@@ -159,7 +167,7 @@ h1 span {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: rgb(162, 87, 227);
+    background: #000000a8;
     color: white;
     padding: 10px;
     text-align: center;
@@ -173,7 +181,7 @@ h1 span {
 }
 
 .box {
-    background: #9c32f440;
+    background: #dc354573;
     border-radius: 34px;
-    width: 682px;
+    box-shadow: inset 0px -32px 33px -13px black;
 }
