@@ -1,13 +1,15 @@
 // Color Variables
-$background-color: #00203F; // Deep Ocean
-$primary-color: #00587A; // Abyss Blue
-$accent-color: #ADEFD1; // Coral Reef
-$text-color: #F6F7F8; // Sea Foam
-$bubble-gradient: #D4F1F4; // Bubble Highlight
-$bubble-shadow: black; // Bubble Shadow
+$background-color: #00203F;
+$primary-color: black;
+$secondary-color: #082946;
+$accent-color: #ADEFD1;
+$text-color: #F6F7F8;
+$bubble-gradient: #D4F1F4;
+$bubble-shadow: black;
+$shadow: #082845;
 
 body {
-  background: conic-gradient(from 180deg, $background-color, $primary-color, $background-color);
+  background: conic-gradient(from 180deg, $background-color, $primary-color, $secondary-color);
   overflow-x: hidden;
   font-size: 22px;
   color: $text-color;
@@ -16,7 +18,7 @@ body {
 h3 {
   padding-inline: 30px;
 
-  a:hover, .active {
+  a:hover, .active-nav {
     color: $accent-color;
     font-weight: 700;
     text-shadow: -4px 2px #e0f7fa47;
@@ -29,7 +31,7 @@ h1 span {
   border-radius: 25px;
   background: $primary-color;
   padding: 14px;
-  box-shadow: -10px 10px 10px 4px $bubble-shadow;
+  box-shadow: -10px 10px 10px 4px $shadow;
   color: $text-color;
 }
 
@@ -103,7 +105,7 @@ h1 span {
   background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.9), rgba(173, 216, 230, 0.6) 40%, rgba(0, 191, 255, 0.4));
   box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.6), 5px 5px 15px #00000080;
   border: 2px solid rgba(173, 216, 230, 0.5);
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .circle::after {
@@ -120,25 +122,19 @@ h1 span {
 
 .skills {
   margin: 25px 50px;
-  box-shadow: -8px 5px 13px -1px black;
+  box-shadow: -8px 5px 13px -1px $shadow;
   width: 145px;
   padding: 10px;
   border-radius: 30px;
 
   img {
     height: 80px;
+    filter: drop-shadow(-7px 3px 1px $shadow);
   }
 }
 
-.arrow {
-  margin-left: 100px;
-  padding-left: 100px;
-  font-size: 70px;
-  text-shadow: 5px 3px #02c7d77a;
-}
-
-.move-left {
-  margin-left: 300px;
+.skills:hover {
+  box-shadow: 0px 0px 70px 0px #64B5F6
 }
 
 .active {
@@ -152,12 +148,13 @@ h1 span {
 .footer {
   background: $primary-color;
   color: $text-color;
+  box-shadow: 0px -6px 16px -10px $accent-color;
 }
 
 .hello {
   font-family: "Grey Qo", cursive;
   font-size: 180px !important;
-  text-shadow: 8px 4px #adefd11a, 10px 6px rgb(0 0 0 / 61%);
+  text-shadow: 10px 6px $shadow;
 }
 
 .icon-style i {
@@ -193,8 +190,9 @@ h1 span {
 
 .carousel-item {
   img {
-    height: 550px !important;
-    padding: 80px 100px 100px;
+    height: 520px !important;
+    padding: 0px 37px 114px 30px;
+    filter: drop-shadow(0px 0px 35px white);
   }
 
   .carousel-caption {
@@ -203,12 +201,13 @@ h1 span {
     left: 0;
     width: 100%;
     background: #00375742;
-    color: $text-color;
-    padding: 10px;
+    color: $accent-color;
+    padding: 25px;
     text-align: center;
     opacity: 0;
     transition: opacity 0.5s ease;
-    border-radius: 0 0 34px 34px;
+    border-radius: 34px;
+    height: 35%;
 
     &:hover {
       opacity: 1;
@@ -220,4 +219,16 @@ h1 span {
   background: rgba($primary-color, 0.3);
   border-radius: 34px;
   box-shadow: inset 0px -32px 33px -13px black;
+}
+
+video {
+  border-radius: 34px;
+  width: 700px;
+}
+
+nav img {
+  height: 150px;
+  position: relative;
+  top: -25px;
+  right: 25px;
 }

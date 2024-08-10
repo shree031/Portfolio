@@ -13,13 +13,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Grey+Qo&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 <div id="circle-container">
     <nav class="d-flex justify-content-between p-5">
-        <h1 class="fw-600"><strong>SHREEDEVI PATIL</strong></h1>
+        <img src="images/shreedevi.png">
         <div class="d-flex flex-wrap">
-            <h3><a href="#home" class="nav-item border-bottom active">Home</a></h3>
+            <h3><a href="#home" class="nav-item border-bottom">Home</a></h3>
             <h3><a href="#skills" class="nav-item">Skills</a></h3>
             <h3><a href="#work" class="nav-item">Work-experience</a></h3>
             <h3><a href="#project" class="nav-item">Projects</a></h3>
@@ -39,11 +40,10 @@
         </div>
     </section>
     <!--    Skills-->
-    <section id="skills" class="m-5">
+    <section id="skills" class="m-5 center flex-column">
         <h1><span>Skills & Expertise<i class="bi bi-bar-chart pl-3"></i></span></h1>
-        <i class="bi bi-arrow-return-right arrow"></i>
-        <div class="w-100 center justify-content-end">
-            <div class="d-flex flex-wrap w-70 center box py-4">
+        <div class="w-100 center">
+            <div class="d-flex flex-wrap center box py-5">
                 <div class="skills d-flex flex-column center">
                     <img src="images/c++.png"/>
                     <h4>C++</h4>
@@ -65,12 +65,24 @@
                     <h4>Typescript</h4>
                 </div>
                 <div class="skills d-flex flex-column center">
+                    <img src="images/angular.png"/>
+                    <h4>Angular</h4>
+                </div>
+                <div class="skills d-flex flex-column center">
+                    <img src="images/ionic.png"/>
+                    <h4>Ionic</h4>
+                </div>
+                <div class="skills d-flex flex-column center">
                     <img src="images/html.png"/>
                     <h4>HTML</h4>
                 </div>
                 <div class="skills d-flex flex-column center">
                     <img src="images/css.png"/>
                     <h4>CSS</h4>
+                </div>
+                <div class="skills d-flex flex-column center">
+                    <img src="images/sass.png"/>
+                    <h4>Sass</h4>
                 </div>
                 <div class="skills d-flex flex-column center">
                     <img src="images/bootstrap.png"/>
@@ -92,70 +104,83 @@
         </div>
     </section>
     <!--    Work-experience-->
-    <section class="m-5" id="work">
+    <section id="work" class="m-5 center flex-column pt-5">
         <h1><span>Work experience<i class="bi bi-laptop pl-3"></i></span></h1>
-        <i class="bi bi-arrow-return-right arrow"></i>
-        <div class="move-left">
-            <h2>Xcaliber Infotech <i class="bi bi-buildings"></i></h2>
-            <p class="text-muted">Software developer (Nov-2022 - Present)</p>
-        </div>
-        <section class="center justify-content-end">
-            <div id="carouselExampleIndicators" class="carousel slide box w-900 h-600" data-ride="carousel">
+        <section class="center w-100">
+            <div id="carouselExampleIndicators" class="carousel slide box w-100" data-ride="carousel">
                 <ol class="carousel-indicators mb-1">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
                 </ol>
-                <div class=" carousel-inner">
+                <div class="carousel-inner">
+                    <div class="mt-4 text-center">
+                        <h2>Xcaliber Infotech <i class="bi bi-buildings"></i></h2>
+                        <p>Software developer (Nov-2022 - Present)</p>
+                    </div>
                     <div class="carousel-item active">
-                        <img src="images/reCaptcha.gif" class="d-block" alt="Image 1">
-                        <div class="carousel-caption ">
-                            <h5>Integrated reCAPTCHA in the Web App</h5>
-                            <p>Ensured security by seamlessly integrating reCAPTCHA into the web application, protecting
-                                against automated threats.</p>
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="images/reCaptcha.gif" class="d-block w-100" alt="Image 1">
+                                <div class="carousel-caption">
+                                    <h5>Integrated reCAPTCHA in the Web App</h5>
+                                    <p>Ensured security by seamlessly integrating reCAPTCHA into the web application,
+                                        protecting
+                                        against automated threats.</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <img src="images/Chart.js.png" class="d-block w-100" alt="Image 2">
+                                <div class="carousel-caption">
+                                    <h5>Using Chart.js Visualized Data</h5>
+                                    <p>Enhanced data analysis with dynamic Chart.js visualizations, turning complex data
+                                        into
+                                        actionable insights.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="/images/Chart.js.png" class="d-block" alt="Image 2">
-                        <div class="carousel-caption">
-                            <h5>Using Chart.js Visualized Data</h5>
-                            <p>Enhanced data analysis with dynamic Chart.js visualizations, turning complex data into
-                                actionable insights</p>
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="images/Maven-Gradle.png" class="d-block w-100" alt="Image 3">
+                                <div class="carousel-caption">
+                                    <h5>Upgraded Build Tool from Maven to Gradle</h5>
+                                    <p>Streamlined build processes by upgrading from Maven to Gradle, boosting
+                                        efficiency and
+                                        flexibility in project management.</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <img src="images/log4j.png" class="d-block w-100" alt="Image 4">
+                                <div class="carousel-caption">
+                                    <h5>Upgraded Log4j to Log4j2</h5>
+                                    <p>Improved logging capabilities by upgrading from Log4j to Log4j2, enhancing
+                                        performance
+                                        and security.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="images/Maven-Gradle.png" class="d-block" alt="Image 3">
-                        <div class="carousel-caption">
-                            <h5>Upgraded Build Tool from Maven to Gradle</h5>
-                            <p>Streamlined build processes by upgrading from Maven to Gradle, boosting efficiency and
-                                flexibility in project management</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/log4j.png" class="d-block" alt="Image 4">
-                        <div class="carousel-caption">
-                            <h5>Upgraded Log4j to Log4j2</h5>
-                            <p>Improved logging capabilities by upgrading from Log4j to Log4j2, enhancing performance
-                                and security.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/Push-notification.gif" class="d-block" alt="Image 4">
-                        <div class="carousel-caption">
-                            <h5>Integrated Push Notification [Ionic in Android and iOS]</h5>
-                            <p>From code to connection—implemented push notifications on both Android and iOS,
-                                delivering a consistent user experience across platforms.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/code.gif" class="d-block" alt="Image 4">
-                        <div class="carousel-caption">
-                            <h5>Contributed to code reviews</h5>
-                            <p>Ensured code quality and fostered collaboration through thorough and constructive code
-                                reviews.</p>
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="images/Push-notification.gif" class="d-block w-100" alt="Image 5">
+                                <div class="carousel-caption">
+                                    <h5>Integrated Push Notification [Ionic in Android and iOS]</h5>
+                                    <p>From code to connection—implemented push notifications on both Android and iOS,
+                                        delivering a consistent user experience across platforms.</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <img src="images/code.gif" class="d-block w-100" alt="Image 6">
+                                <div class="carousel-caption">
+                                    <h5>Contributed to code reviews</h5>
+                                    <p>Ensured code quality and fostered collaboration through thorough and constructive
+                                        code
+                                        reviews.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -168,47 +193,39 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-
         </section>
     </section>
     <!--    Projects-->
-    <section id="project" class="m-5">
+    <section id="project" class="m-5 center flex-column pt-5">
         <h1><span>Projects<i class="bi bi-code-slash pl-3"></i></span></h1>
-        <i class="bi bi-arrow-return-right arrow"></i>
-        <div class="move-left">
-            <h2>FoodVilla <i class="bi bi-cup-hot"></i></h2>
-            <p class="text-muted">Angular, SpringBoot, Bootstrap</p>
-            <p>
-                Developed a comprehensive recipe application with a focus on a user-friendly interface and a robust
-                backend system to manage recipes,
-                user data, and orders.
-            </p>
-            <b>Frontend Features:</b>
-            <ul>
-                <li><b> Responsive and Modern Interface:</b> Designed an intuitive, responsive web interface using HTML,
-                    CSS, Angular, and Bootstrap,
-                    ensuring a seamless experience across all devices.
-                </li>
-                <li><b>Interactive Recipe Exploration:</b> Implemented dynamic features for users to easily browse and
-                    view detailed recipes.
-                </li>
-                <li><b>Role-Based Functionality: </b>Integrated authentication and authorization for different roles
-                    (user and distributor), with tailored access to
-                    features such as the cart functionality.
-                </li>
-            </ul>
-            <b>Backend Features:</b>
-            <ul>
-                <li><b>Scalable Backend System:</b> Developed a backend using Spring Boot and Postgresql, managing
-                    recipe data, user accounts, and order
-                    processing efficiently.
-                </li>
-                <li><b>Data Security and Management:</b>Employed password encryption and used complex table
-                    relationships to ensure secure and organized data handling.
-                </li>
-            </ul>
-        </div>
+        <section class="center w-100">
+            <div class="box center flex-column pt-5 px-4">
+                <div class="d-flex justify-content-between w-100">
+                    <div>
+                        <h2>FoodVilla <i class="bi bi-cup-hot"></i></h2>
+                        <p class=""><i>Angular, SpringBoot, Bootstrap</i></p>
+                    </div>
+                    <div>
+                        <h4>April - July <i class="bi bi-calendar-range"></i></h4>
+                    </div>
+                </div>
+                <p>
+                    Developed a comprehensive recipe application with a focus on a user-friendly interface and a robust
+                    backend system to manage recipes,
+                    user data, and orders.
+                </p>
+                <div class="pb-5 d-flex justify-content-between w-100">
+                    <video controls>
+                        <source src="Videos/Foodvilla.mp4" type="video/mp4">
+                    </video>
+                    <div>
+                        <img src="images/java.png">
+                    </div>
+                </div>
+            </div>
+        </section>
     </section>
+
 </div>
 <!--Contact-->
 <section class="footer p-2" id="contact">
@@ -222,11 +239,6 @@
                 <span class="fw-600">Email:</span>
                 shreedevi031@gmail.com
             </span>
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            <span>
-            <span class="fw-600">Phone:</span>
-                +91-8698043165
-        </span>
         </div>
     </div>
 </section>

@@ -36,7 +36,6 @@ document.addEventListener('DOMContentLoaded', function () {
         circleContainer.appendChild(circleElement);
     }
 
-    const sections = document.querySelectorAll('section');
     const navItems = document.querySelectorAll('.nav-item');
 
     // Smooth scroll to section
@@ -48,6 +47,5 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
     });
-
 
 });
