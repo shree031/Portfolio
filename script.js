@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
             height: `${size}px`,
             left: `${position.x}px`,
             top: `${position.y}px`,
-            zIndex : `-1`
+            zIndex: `-1`
         });
         circleContainer.appendChild(circleElement);
     }
@@ -47,5 +47,76 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
     });
+    gsap.registerPlugin(TextPlugin);
+    const phrases = [
+        "Frontend Development",
+        "Backend Development",
+        "Web Development",
+        "Full-stack Development",
+        "Web-App Development"
+    ];
 
+    let index = 0;
+
+    function typeWriterEffect() {
+        const textElement = document.querySelector('.changing-text');
+        const currentText = phrases[index];
+
+        // Animate typing effect
+        gsap.to(textElement, {
+            duration: currentText.length * 0.1, // Speed of typing
+            text: currentText,
+            ease: "none",
+            onComplete: () => {
+                // Pause for a bit before starting the backspace effect
+                gsap.delayedCall(1, () => {
+                    backspaceEffect(currentText, () => {
+                        // Move to the next phrase
+                        index = (index + 1) % phrases.length;
+                        typeWriterEffect();
+                    });
+                });
+            }
+        });
+    }
+
+    function backspaceEffect(text, onComplete) {
+        const textElement = document.querySelector('.changing-text');
+        let currentLength = text.length;
+
+        const interval = setInterval(() => {
+            currentLength--;
+            textElement.textContent = text.slice(0, currentLength);
+
+            if (currentLength === 0) {
+                clearInterval(interval);
+                onComplete();
+            }
+        }, 50); // Speed of backspace
+    }
+
+    typeWriterEffect();
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Example animation
+    document.querySelectorAll('section').forEach(sec => {
+        gsap.from(sec, {
+            y: 200,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: sec,
+                start: "top 80%", // When the top of the box hits 80% from the top of the viewport
+                end: "top 50%", // When the top of the box hits 50% from the top of the viewport
+                scrub: 1, // Smooth scrolling
+                toggleActions: "play none none reverse", // Play animation on scroll, reverse on scroll back
+            }
+        });
+    });
+
+    document.getElementById('downloadResume').addEventListener('click', function () {
+        const resumeUrl = '/Assets/Files/Shreedevi-RESUME.pdf';
+        window.open(resumeUrl, '_blank');
+    });
 });

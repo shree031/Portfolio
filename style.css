@@ -1,5 +1,5 @@
 body {
-  background: conic-gradient(from 180deg, #00203F, black, #082946);
+  background: conic-gradient(from 180deg, #201E43, #134B70, #508C9B);
   overflow-x: hidden;
   font-size: 22px;
   color: #F6F7F8;
@@ -18,9 +18,9 @@ h3 a:hover, h3 .active-nav {
 
 h1 span {
   border-radius: 25px;
-  background: black;
+  background: #134B70;
   padding: 14px;
-  box-shadow: -10px 10px 10px 4px #082845;
+  box-shadow: -10px 10px 10px 4px black;
   color: #F6F7F8;
 }
 
@@ -72,6 +72,14 @@ h1 span {
   font-size: 60px;
 }
 
+.fs-50 {
+  font-size: 60px;
+}
+
+.fs-40 {
+  font-size: 40px;
+}
+
 .fs-130 {
   font-size: 130px;
 }
@@ -86,10 +94,10 @@ h1 span {
   position: absolute;
   border-radius: 50%;
   background: #D4F1F4;
-  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.9), rgba(173, 216, 230, 0.6) 40%, rgba(0, 191, 255, 0.4));
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.9), #201E43 40%, #134B70);
   box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.6), 5px 5px 15px rgba(0, 0, 0, 0.5019607843);
   border: 2px solid rgba(173, 216, 230, 0.5);
-  opacity: 1;
+  opacity: 0.2;
 }
 
 .circle::after {
@@ -106,18 +114,18 @@ h1 span {
 
 .skills {
   margin: 25px 50px;
-  box-shadow: -8px 5px 13px -1px #082845;
+  box-shadow: -8px 5px 13px -1px black;
   width: 145px;
   padding: 10px;
   border-radius: 30px;
 }
 .skills img {
   height: 80px;
-  filter: drop-shadow(-7px 3px 1px #082845);
+  filter: drop-shadow(-7px 3px 1px black);
 }
 
 .skills:hover {
-  box-shadow: 0px 0px 70px 0px #64B5F6;
+  box-shadow: 0px 0px 18px 11px black;
 }
 
 .active {
@@ -129,30 +137,28 @@ h1 span {
 }
 
 .footer {
-  background: black;
+  background: #134B70;
   color: #F6F7F8;
-  box-shadow: 0px -6px 16px -10px #ADEFD1;
 }
 
 .hello {
-  font-family: "Grey Qo", cursive;
-  font-size: 180px !important;
-  text-shadow: 10px 6px #082845;
+  font-size: 130px !important;
+  text-shadow: 10px 6px black;
 }
 
 .icon-style i {
-  font-size: 40px;
+  font-size: 30px;
   display: inline-block;
   color: #F6F7F8;
-  background: black;
+  background: #134B70;
   border-radius: 50%;
   border: 1px solid #F6F7F8;
-  padding: 10px 22px;
+  padding: 10px 20px;
   margin: 10px;
 }
 .icon-style i:hover {
   background: #F6F7F8;
-  color: black;
+  color: #134B70;
 }
 
 .border-bottom {
@@ -173,15 +179,15 @@ h1 span {
 .carousel-item img {
   height: 520px !important;
   padding: 0px 37px 114px 30px;
-  filter: drop-shadow(0px 0px 35px white);
+  filter: drop-shadow(2px 2px 0px white);
 }
 .carousel-item .carousel-caption {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  background: rgba(0, 55, 87, 0.2588235294);
-  color: #ADEFD1;
+  background: #201E43;
+  color: #F6F7F8;
   padding: 25px;
   text-align: center;
   opacity: 0;
@@ -194,21 +200,54 @@ h1 span {
 }
 
 .box {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(19, 75, 112, 0.3);
   border-radius: 34px;
-  box-shadow: inset 0px -32px 33px -13px black;
+  box-shadow: inset 0px -32px 33px -13px #134B70;
 }
 
 video {
-  border-radius: 34px;
-  width: 700px;
+  width: 50%;
+  padding-right: 15px;
 }
 
+nav {
+  padding: 2rem 2rem 0 2rem !important;
+}
 nav img {
   height: 150px;
   position: relative;
   top: -25px;
   right: 25px;
+  filter: drop-shadow(7px 2px 4px black);
+}
+
+.changing-text {
+  display: inline-block;
+  white-space: nowrap;
+  border-right: 2px solid #ADEFD1;
+  font-size: 40px;
+  color: #ADEFD1;
+  font-family: cursive;
+}
+
+#home {
+  padding-top: 0px !important;
+}
+
+.resume {
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+  background: #201E43;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 30px;
+}
+
+.hi-image {
+  filter: drop-shadow(2px 4px 19px white);
+  width: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */

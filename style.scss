@@ -1,12 +1,12 @@
 // Color Variables
-$background-color: #00203F;
-$primary-color: black;
-$secondary-color: #082946;
+$background-color: #201E43;
+$primary-color: #134B70;
+$secondary-color: #508C9B;
 $accent-color: #ADEFD1;
 $text-color: #F6F7F8;
 $bubble-gradient: #D4F1F4;
 $bubble-shadow: black;
-$shadow: #082845;
+$shadow: black;
 
 body {
   background: conic-gradient(from 180deg, $background-color, $primary-color, $secondary-color);
@@ -88,6 +88,14 @@ h1 span {
   font-size: 60px;
 }
 
+.fs-50 {
+  font-size: 60px;
+}
+
+.fs-40 {
+  font-size: 40px;
+}
+
 .fs-130 {
   font-size: 130px;
 }
@@ -102,10 +110,10 @@ h1 span {
   position: absolute;
   border-radius: 50%;
   background: $bubble-gradient;
-  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.9), rgba(173, 216, 230, 0.6) 40%, rgba(0, 191, 255, 0.4));
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.9), $background-color 40%, $primary-color);
   box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.6), 5px 5px 15px #00000080;
   border: 2px solid rgba(173, 216, 230, 0.5);
-  opacity: 1;
+  opacity: 0.2;
 }
 
 .circle::after {
@@ -129,12 +137,12 @@ h1 span {
 
   img {
     height: 80px;
-    filter: drop-shadow(-7px 3px 1px $shadow);
+    filter: drop-shadow(-7px 3px 1px $bubble-shadow);
   }
 }
 
 .skills:hover {
-  box-shadow: 0px 0px 70px 0px #64B5F6
+  box-shadow: 0px 0px 18px 11px $shadow;
 }
 
 .active {
@@ -148,23 +156,22 @@ h1 span {
 .footer {
   background: $primary-color;
   color: $text-color;
-  box-shadow: 0px -6px 16px -10px $accent-color;
+  //box-shadow: 0px -6px 16px -10px $accent-color;
 }
 
 .hello {
-  font-family: "Grey Qo", cursive;
-  font-size: 180px !important;
+  font-size: 130px !important;
   text-shadow: 10px 6px $shadow;
 }
 
 .icon-style i {
-  font-size: 40px;
+  font-size: 30px;
   display: inline-block;
   color: $text-color;
   background: $primary-color;
   border-radius: 50%;
   border: 1px solid $text-color;
-  padding: 10px 22px;
+  padding: 10px 20px;
   margin: 10px;
 
   &:hover {
@@ -192,7 +199,7 @@ h1 span {
   img {
     height: 520px !important;
     padding: 0px 37px 114px 30px;
-    filter: drop-shadow(0px 0px 35px white);
+    filter: drop-shadow(2px 2px 0px white);
   }
 
   .carousel-caption {
@@ -200,8 +207,8 @@ h1 span {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: #00375742;
-    color: $accent-color;
+    background: $background-color;
+    color: $text-color;
     padding: 25px;
     text-align: center;
     opacity: 0;
@@ -218,17 +225,53 @@ h1 span {
 .box {
   background: rgba($primary-color, 0.3);
   border-radius: 34px;
-  box-shadow: inset 0px -32px 33px -13px black;
+  box-shadow: inset 0px -32px 33px -13px $primary-color;
 }
 
 video {
-  border-radius: 34px;
-  width: 700px;
+  //border-radius: 34px;
+  width: 50%;
+  padding-right: 15px;
 }
 
-nav img {
-  height: 150px;
-  position: relative;
-  top: -25px;
-  right: 25px;
+nav {
+  padding: 2rem 2rem 0 2rem !important;
+
+  img {
+    height: 150px;
+    position: relative;
+    top: -25px;
+    right: 25px;
+
+    filter: drop-shadow(7px 2px 4px $shadow);
+  }
+}
+
+.changing-text {
+  display: inline-block;
+  white-space: nowrap;
+  border-right: 2px solid $accent-color;
+  font-size: 40px;
+  color: $accent-color;
+  font-family: cursive;
+}
+
+#home {
+  padding-top: 0px !important;
+}
+
+.resume {
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+  background: $background-color;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 30px;
+}
+
+.hi-image {
+  filter: drop-shadow(2px 4px 19px white);
+  width: 50%;
 }
