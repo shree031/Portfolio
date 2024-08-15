@@ -114,10 +114,4 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
-
-    document.getElementById('downloadResume').addEventListener('click', function () {
-        const resumeUrl = '/Assets/Files/Shreedevi-RESUME.pdf';
-        window.open(resumeUrl, '_blank');
-    });
-
 });
