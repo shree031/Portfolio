@@ -5,8 +5,18 @@ body {
   color: #F6F7F8;
 }
 
+.offcanvas {
+  background-color: #201E43;
+  color: #F6F7F8;
+  font-size: 25px;
+  width: 400px;
+  padding: 30px;
+}
+
 h3 {
   padding-inline: 30px;
+  margin-bottom: 20px;
+  margin-left: -25px;
 }
 h3 a:hover, h3 .active-nav {
   color: #ADEFD1;
@@ -16,6 +26,11 @@ h3 a:hover, h3 .active-nav {
   text-decoration: none;
 }
 
+@media (min-width: 1000px) and (max-width: 1300px) {
+  h3 {
+    padding-right: 8px;
+  }
+}
 h1 span {
   border-radius: 25px;
   background: #134B70;
@@ -128,12 +143,9 @@ h1 span {
   box-shadow: 0px 0px 18px 11px black;
 }
 
-.active {
-  text-decoration: underline;
-}
-
 .nav-item {
   color: #F6F7F8;
+  text-decoration: none;
 }
 
 .footer {
@@ -178,15 +190,18 @@ h1 span {
 
 .carousel-item img {
   height: 520px !important;
+  width: 60%;
   padding: 0px 37px 114px 30px;
   filter: drop-shadow(2px 2px 0px white);
+  margin: 0 auto;
+  display: block;
 }
 .carousel-item .carousel-caption {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  background: #201E43;
+  background: rgba(32, 30, 67, 0.8);
   color: #F6F7F8;
   padding: 25px;
   text-align: center;
@@ -203,11 +218,6 @@ h1 span {
   background: rgba(19, 75, 112, 0.3);
   border-radius: 34px;
   box-shadow: inset 0px -32px 33px -13px #134B70;
-}
-
-video {
-  width: 50%;
-  padding-right: 15px;
 }
 
 nav {
@@ -228,6 +238,7 @@ nav img {
   font-size: 40px;
   color: #ADEFD1;
   font-family: cursive;
+  font-style: italic;
 }
 
 #home {
@@ -242,12 +253,60 @@ nav img {
   cursor: pointer;
   border-radius: 10px;
   padding: 5px 10px;
-  font-size: 30px;
+  font-size: 25px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+video {
+  width: 50%;
+  padding-right: 15px;
 }
 
 .hi-image {
   filter: drop-shadow(2px 4px 19px white);
-  width: 50%;
+  width: 65%;
+}
+
+.education img {
+  height: 100px;
+  background: #F6F7F8;
+}
+
+@media (max-width: 985px) {
+  .hi-image {
+    width: 70%;
+    display: block;
+    margin: 0 auto !important;
+  }
+  .navbar-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  video {
+    width: 100%;
+  }
+  .carousel-item img {
+    width: 100%;
+  }
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+p a {
+  text-shadow: 2px 1px 1px black;
+}
+
+.project-click:hover {
+  box-shadow: -3px 2px 6px -1px;
+  padding: 4px 20px;
+  border-radius: 13px;
 }
 
 /*# sourceMappingURL=style.css.map */

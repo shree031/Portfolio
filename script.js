@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const maxSize = 250;
     const gridCols = 2; // Number of columns in the grid
     const gridRows = 2; // Number of rows in the grid
-    const cellWidth = window.innerWidth / gridCols + 40;
+    const cellWidth = window.innerWidth / gridCols;
     const cellHeight = window.innerHeight / gridRows;
 
     function getRandomSize() {
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function () {
             duration: 1,
             scrollTrigger: {
                 trigger: sec,
-                start: "top 80%", // When the top of the box hits 80% from the top of the viewport
+                start: "top 100%", // When the top of the box hits 80% from the top of the viewport
                 end: "top 50%", // When the top of the box hits 50% from the top of the viewport
                 scrub: 1, // Smooth scrolling
                 toggleActions: "play none none reverse", // Play animation on scroll, reverse on scroll back
@@ -119,4 +119,5 @@ document.addEventListener('DOMContentLoaded', function () {
         const resumeUrl = '/Assets/Files/Shreedevi-RESUME.pdf';
         window.open(resumeUrl, '_blank');
     });
+
 });

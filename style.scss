@@ -15,8 +15,18 @@ body {
   color: $text-color;
 }
 
+.offcanvas {
+  background-color: $background-color;
+  color: $text-color;
+  font-size: 25px;
+  width: 400px;
+  padding: 30px;
+}
+
 h3 {
   padding-inline: 30px;
+  margin-bottom: 20px;
+  margin-left: -25px;
 
   a:hover, .active-nav {
     color: $accent-color;
@@ -24,6 +34,12 @@ h3 {
     text-shadow: -4px 2px #e0f7fa47;
     border-bottom: 3px solid $accent-color !important;
     text-decoration: none;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1300px) {
+  h3 {
+    padding-right: 8px;
   }
 }
 
@@ -145,18 +161,15 @@ h1 span {
   box-shadow: 0px 0px 18px 11px $shadow;
 }
 
-.active {
-  text-decoration: underline;
-}
 
 .nav-item {
   color: $text-color;
+  text-decoration: none;
 }
 
 .footer {
   background: $primary-color;
   color: $text-color;
-  //box-shadow: 0px -6px 16px -10px $accent-color;
 }
 
 .hello {
@@ -198,8 +211,11 @@ h1 span {
 .carousel-item {
   img {
     height: 520px !important;
+    width: 60%;
     padding: 0px 37px 114px 30px;
     filter: drop-shadow(2px 2px 0px white);
+    margin: 0 auto;
+    display: block;
   }
 
   .carousel-caption {
@@ -207,7 +223,7 @@ h1 span {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: $background-color;
+    background: rgba($background-color, 0.8);
     color: $text-color;
     padding: 25px;
     text-align: center;
@@ -222,16 +238,11 @@ h1 span {
   }
 }
 
+
 .box {
   background: rgba($primary-color, 0.3);
   border-radius: 34px;
   box-shadow: inset 0px -32px 33px -13px $primary-color;
-}
-
-video {
-  //border-radius: 34px;
-  width: 50%;
-  padding-right: 15px;
 }
 
 nav {
@@ -242,7 +253,6 @@ nav {
     position: relative;
     top: -25px;
     right: 25px;
-
     filter: drop-shadow(7px 2px 4px $shadow);
   }
 }
@@ -254,6 +264,7 @@ nav {
   font-size: 40px;
   color: $accent-color;
   font-family: cursive;
+  font-style: italic;
 }
 
 #home {
@@ -268,10 +279,65 @@ nav {
   cursor: pointer;
   border-radius: 10px;
   padding: 5px 10px;
-  font-size: 30px;
+  font-size: 25px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+video {
+  width: 50%;
+  padding-right: 15px;
 }
 
 .hi-image {
   filter: drop-shadow(2px 4px 19px white);
-  width: 50%;
+  width: 65%;
+}
+
+.education {
+  //width: 60%;
+
+  img {
+    height: 100px;
+    //width: 200px;
+    background: $text-color;
+  }
+}
+
+@media (max-width: 985px) {
+  .hi-image {
+    width: 70%;
+    display: block;
+    margin: 0 auto !important;
+  }
+  .navbar-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  video {
+    width: 100%;
+  }
+  .carousel-item img {
+    width: 100%;
+  }
+
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+p a {
+  text-shadow: 2px 1px 1px black;
+}
+
+.project-click:hover {
+  box-shadow: -3px 2px 6px -1px;
+  padding: 4px 20px;
+  border-radius: 13px;
 }
