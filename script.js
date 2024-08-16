@@ -136,4 +136,32 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
+
+    const sections = document.querySelectorAll("section");
+    // const navItems = document.querySelectorAll(".nav-item");
+
+    const observerOptions = {
+        root: null, // Use the viewport as the container
+        rootMargin: "0px",
+        threshold: 0.5 // Trigger when 50% of the section is visible
+    };
+
+    const observerCallback = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                navItems.forEach(item => {
+                    item.classList.remove("active-nav");
+                    if (item.getAttribute("href").substring(1) === entry.target.id) {
+                        item.classList.add("active-nav");
+                    }
+                });
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
 });
