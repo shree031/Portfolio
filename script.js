@@ -36,17 +36,6 @@ document.addEventListener('DOMContentLoaded', function () {
         circleContainer.appendChild(circleElement);
     }
 
-   /* // Smooth scroll to section
-    const navItems = document.querySelectorAll('.nav-item');
-    navItems.forEach(item => {
-        item.addEventListener('click', event => {
-            event.preventDefault();
-            document.querySelector(item.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });*/
-
     gsap.registerPlugin(TextPlugin);
     const phrases = [
         "Frontend Development",

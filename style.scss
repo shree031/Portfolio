@@ -161,7 +161,6 @@ h1 span {
   box-shadow: 0px 0px 18px 11px $shadow;
 }
 
-
 .nav-item {
   color: $text-color;
   text-decoration: none;
@@ -238,7 +237,6 @@ h1 span {
   }
 }
 
-
 .box {
   background: rgba($primary-color, 0.3);
   border-radius: 34px;
@@ -246,13 +244,11 @@ h1 span {
 }
 
 nav {
-  padding: 2rem 2rem 0 2rem !important;
-
   img {
     height: 90px;
     position: relative;
-    top: -25px;
-    right: 25px;
+    top: 0;
+    right: 0;
     filter: drop-shadow(7px 2px 4px $shadow);
   }
 }
@@ -262,7 +258,6 @@ nav {
   display: inline-block;
   white-space: nowrap;
   border-right: 2px solid $accent-color;
-  //font-size: 40px;
   color: $accent-color;
   font-family: cursive;
   font-style: italic;
@@ -296,14 +291,10 @@ video {
   width: 65%;
 }
 
-.education {
-  //width: 60%;
-
-  img {
-    height: 100px;
-    //width: 200px;
-    background: $text-color;
-  }
+.education img {
+  height: 100px;
+  margin-left: .5rem !important;
+  background: $text-color;
 }
 
 @media (max-width: 985px) {
@@ -328,12 +319,6 @@ p a {
   text-shadow: 2px 1px 1px black;
 }
 
-/*.project-click:hover {
-  box-shadow: -3px 2px 6px -1px;
-  padding: 4px 20px;
-  border-radius: 13px;
-}*/
-
 .fix-nav {
   position: fixed;
   background: rgba($background-color, 0.3);
@@ -355,45 +340,77 @@ section {
 
 
 @media (max-width: 768px) {
+
   body {
     font-size: 14px;
   }
+
   .hello {
     font-size: 100px !important;
   }
+
   .skills {
-    margin: 10px -10px;
+    margin: -3px -15px;
+    box-shadow: 0 0 0 0;
 
     img {
       height: 60px;
     }
   }
+
   .contact-section i {
     font-size: 20px; /* Adjust as needed */
   }
+
   section {
     margin: 0 auto;
   }
+
   .year-cgpa {
     display: flex;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
+
   .carousel-item img {
-    height: 335px !important;
+    height: 300px !important;
     padding: 0px 0px 40px 0px;
   }
+
   .fs-50 {
     font-size: 30px;
   }
+
   .fs-40 {
     font-size: 20px;
   }
+
   .offcanvas {
     width: 73vw !important;
   }
+
   .take-break {
     display: flex;
     flex-direction: column;
+
+    .backend {
+      padding-left: 0 !important;
+    }
+  }
+
+  nav img {
+    height: 60px;
+  }
+
+  .resume {
+    display: none;
+  }
+
+  .education img {
+    margin-bottom: 15px;
+  }
+
+  .box {
+    background: rgba($primary-color, 0.1);
   }
 }
