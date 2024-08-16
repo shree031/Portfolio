@@ -36,9 +36,8 @@ document.addEventListener('DOMContentLoaded', function () {
         circleContainer.appendChild(circleElement);
     }
 
+   /* // Smooth scroll to section
     const navItems = document.querySelectorAll('.nav-item');
-
-    // Smooth scroll to section
     navItems.forEach(item => {
         item.addEventListener('click', event => {
             event.preventDefault();
@@ -46,7 +45,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 behavior: 'smooth'
             });
         });
-    });
+    });*/
+
     gsap.registerPlugin(TextPlugin);
     const phrases = [
         "Frontend Development",
@@ -102,15 +102,37 @@ document.addEventListener('DOMContentLoaded', function () {
     // Example animation
     document.querySelectorAll('section').forEach(sec => {
         gsap.from(sec, {
-            y: 200,
+            y: 100,
             opacity: 0,
             duration: 1,
             scrollTrigger: {
                 trigger: sec,
-                start: "top 100%", // When the top of the box hits 80% from the top of the viewport
-                end: "top 50%", // When the top of the box hits 50% from the top of the viewport
-                scrub: 1, // Smooth scrolling
-                toggleActions: "play none none reverse", // Play animation on scroll, reverse on scroll back
+                start: "top 80%",
+                end: "top 50%",
+                scrub: 1,
+                toggleActions: "play none none reverse",
+            }
+        });
+    });
+    const navItems = document.querySelectorAll('.nav-item');
+    const offcanvasElement = document.getElementById('offcanvasNavbar');
+    const bsOffcanvas = new bootstrap.Offcanvas(offcanvasElement);
+
+    navItems.forEach(item => {
+        item.addEventListener('click', event => {
+            event.preventDefault();
+
+            const targetId = item.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+
+            if (window.innerWidth < 992) {  // Close offcanvas only on small screens
+                bsOffcanvas.hide();
             }
         });
     });

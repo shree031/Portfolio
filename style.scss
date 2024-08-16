@@ -249,7 +249,7 @@ nav {
   padding: 2rem 2rem 0 2rem !important;
 
   img {
-    height: 150px;
+    height: 90px;
     position: relative;
     top: -25px;
     right: 25px;
@@ -265,10 +265,6 @@ nav {
   color: $accent-color;
   font-family: cursive;
   font-style: italic;
-}
-
-#home {
-  padding-top: 0px !important;
 }
 
 .resume {
@@ -315,17 +311,12 @@ video {
     display: block;
     margin: 0 auto !important;
   }
-  .navbar-nav {
-    flex-direction: column;
-    text-align: center;
-  }
   video {
     width: 100%;
   }
   .carousel-item img {
     width: 100%;
   }
-
 }
 
 .cursor-pointer {
@@ -340,4 +331,13 @@ p a {
   box-shadow: -3px 2px 6px -1px;
   padding: 4px 20px;
   border-radius: 13px;
+}
+
+.fix-nav {
+  position: fixed;
+  background: rgba($background-color, 0.7);
+  top: 0;
+  width: 100%;
+  z-index: 5;
+  box-shadow: 0px -2px 6px 2px $secondary-color;
 }
