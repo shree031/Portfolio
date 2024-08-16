@@ -114,6 +114,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
+
     const navItems = document.querySelectorAll('.nav-item');
     const offcanvasElement = document.getElementById('offcanvasNavbar');
     const bsOffcanvas = new bootstrap.Offcanvas(offcanvasElement);
@@ -164,4 +165,5 @@ document.addEventListener('DOMContentLoaded', function () {
     sections.forEach(section => {
         observer.observe(section);
     });
+
 });
