@@ -220,14 +220,11 @@ h1 span {
   box-shadow: inset 0px -32px 33px -13px #134B70;
 }
 
-nav {
-  padding: 2rem 2rem 0 2rem !important;
-}
 nav img {
   height: 90px;
   position: relative;
-  top: -25px;
-  right: 25px;
+  top: 0;
+  right: 0;
   filter: drop-shadow(7px 2px 4px black);
 }
 
@@ -270,6 +267,7 @@ video {
 
 .education img {
   height: 100px;
+  margin-left: 0.5rem !important;
   background: #F6F7F8;
 }
 
@@ -294,11 +292,6 @@ p a {
   text-shadow: 2px 1px 1px black;
 }
 
-/*.project-click:hover {
-  box-shadow: -3px 2px 6px -1px;
-  padding: 4px 20px;
-  border-radius: 13px;
-}*/
 .fix-nav {
   position: fixed;
   background: rgba(32, 30, 67, 0.3);
@@ -326,7 +319,8 @@ section {
     font-size: 100px !important;
   }
   .skills {
-    margin: 10px -10px;
+    margin: -3px -15px;
+    box-shadow: 0 0 0 0;
   }
   .skills img {
     height: 60px;
@@ -343,7 +337,7 @@ section {
     justify-content: space-between;
   }
   .carousel-item img {
-    height: 335px !important;
+    height: 300px !important;
     padding: 0px 0px 40px 0px;
   }
   .fs-50 {
@@ -358,11 +352,22 @@ section {
   .take-break {
     display: flex;
     flex-direction: column;
-    .backend{
-      padding-start:0;
   }
+  .take-break .backend {
+    padding-left: 0 !important;
   }
-    
+  nav img {
+    height: 60px;
+  }
+  .resume {
+    display: none;
+  }
+  .education img {
+    margin-bottom: 15px;
+  }
+  .box {
+    background: rgba(19, 75, 112, 0.1);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
