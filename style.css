@@ -358,7 +358,11 @@ section {
   .take-break {
     display: flex;
     flex-direction: column;
+    .backend{
+      padding-start:0;
   }
+  }
+    
 }
 
 /*# sourceMappingURL=style.css.map */
