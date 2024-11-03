@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+    
     const circleContainer = document.getElementById('circle-container');
     const numberOfCircles = 7; // Number of circles to generate
     const minSize = 80;
@@ -153,6 +154,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     sections.forEach(section => {
         observer.observe(section);
+    });
+
+    const projectClicks = document.querySelectorAll(".project-click");
+    projectClicks.forEach(projectClick => {
+        const icon = projectClick.querySelector(".toggleIcon"); // Select the icon within the current project section
+        projectClick.addEventListener("click", () => {
+            icon.classList.toggle("bi-chevron-double-right");
+            icon.classList.toggle("bi-chevron-double-down");
+        });
     });
 
 });

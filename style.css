@@ -1,14 +1,14 @@
 body {
   background: conic-gradient(from 180deg, #201E43, #134B70, #508C9B);
   overflow-x: hidden;
-  font-size: 22px;
+  font-size: 20px;
   color: #F6F7F8;
 }
 
 .offcanvas {
   background-color: #201E43;
   color: #F6F7F8;
-  font-size: 25px;
+  font-size: 22px;
   width: 400px;
   padding: 30px;
 }
@@ -154,12 +154,12 @@ h1 span {
 }
 
 .hello {
-  font-size: 130px !important;
+  font-size: 120px !important;
   text-shadow: 10px 6px black;
 }
 
 .icon-style i {
-  font-size: 30px;
+  font-size: 28px;
   display: inline-block;
   color: #F6F7F8;
   background: #134B70;
@@ -245,7 +245,7 @@ nav img {
   cursor: pointer;
   border-radius: 10px;
   padding: 5px 10px;
-  font-size: 25px;
+  font-size: 24px;
 }
 
 .intro {
@@ -316,7 +316,7 @@ section {
     font-size: 14px;
   }
   .hello {
-    font-size: 100px !important;
+    font-size: 90px !important;
   }
   .skills {
     margin: -3px -15px;
@@ -326,7 +326,7 @@ section {
     height: 60px;
   }
   .contact-section i {
-    font-size: 20px; /* Adjust as needed */
+    font-size: 18px; /* Adjust as needed */
   }
   section {
     margin: 0 auto;
@@ -369,5 +369,3 @@ section {
     background: rgba(19, 75, 112, 0.1);
   }
 }
-
-/*# sourceMappingURL=style.css.map */
