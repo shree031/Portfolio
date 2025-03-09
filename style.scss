@@ -321,7 +321,7 @@ p a {
 
 .fix-nav {
   position: fixed;
-  background: rgba($background-color, 0.3);
+  background: rgba($background-color, 0.7);
   top: 0;
   width: 100%;
   z-index: 5;
@@ -413,4 +413,8 @@ section {
   .box {
     background: rgba($primary-color, 0.1);
   }
+}
+
+.counter-fixed {
+  bottom: 16px !important;
 }
