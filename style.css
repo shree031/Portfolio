@@ -281,11 +281,6 @@ video {
   background: #F6F7F8;
 }
 
-
-.counter-fixed {
-  bottom: 16px !important;
-}
-
 @media (max-width: 985px) {
   .hi-image {
     width: 70%;
@@ -399,6 +394,7 @@ section {
 
   .education img {
     margin-bottom: 15px;
+    border-radius: 20px;
   }
 
   .box {
