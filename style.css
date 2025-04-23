@@ -38,6 +38,16 @@ h2 span {
   color: #F6F7F8;
 }
 
+.margin-top-120 {
+  margin-top: 120px !important;
+}
+
+.project-img {
+  border-radius: 15px;
+  height: 300px;
+  width: 100%;
+}
+
 .h-500 {
   height: 500px;
 }
@@ -369,6 +379,9 @@ section {
   .box {
     background: rgba(19, 75, 112, 0.1);
     margin: 0px 15px;
+  }
+  .project-img {
+    height: 200px;
   }
 }
 

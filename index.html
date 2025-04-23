@@ -57,9 +57,7 @@
         </div>
     </div>
 
-
-
-    <section id="home" class="d-lg-flex justify-content-around p-5 m-auto mt-5">
+    <section id="home" class="d-lg-flex justify-content-around p-5 m-auto margin-top-120">
         <img draggable=false src="Assets/images/hi.gif" class="hi-image">
         <div class="intro text-center">
             <span class="hello"><b>Hello!</b></span>
@@ -70,6 +68,7 @@
             </p>
         </div>
     </section>
+
     <!--    Skills-->
     <section id="skills" class="center flex-column">
         <h2><span>Skills & Expertise<i class="bi bi-bar-chart ps-3"></i></span></h2>
@@ -134,6 +133,7 @@
             </div>
         </div>
     </section>
+
     <!--    Work-experience-->
     <section id="work" class="center flex-column pt-5">
         <h2><span>Work experience<i class="bi bi-briefcase-fill ps-3"></i></span></h2>
@@ -221,13 +221,11 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-
-
         </div>
     </section>
 
     <!-- Education-->
-   <!-- <section id="education" class="center flex-column pt-5">
+    <!-- <section id="education" class="center flex-column pt-5">
         <h2><span>Education<i class="bi bi-mortarboard-fill ps-3"></i></span></h2>
         <div class="d-flex justify-content-center w-100 row">
             <div class="box d-lg-flex education p-4 align-items-center col-lg-8 col-md-9 col-12">
@@ -292,160 +290,218 @@
     </section>-->
 
     <!--    Projects-->
-    <section id="project" class="center flex-column pt-5">
-        <h2><span>Projects<i class="bi bi-code-slash ps-3"></i></span></h2>
-        <div class="center w-100">
-            <div class="box center flex-column pt-4 px-4">
-                <div class="d-flex justify-content-between w-100">
-                    <div data-bs-toggle="collapse" data-bs-target="#foodvilla" aria-expanded="false"
-                        class="cursor-pointer d-flex align-items-start project-click" aria-controls="collapseExample">
-                        <div class="project-arrow">
-                            <i class="bi bi-chevron-double-right fs-40 toggleIcon"></i>
-                        </div>
-                        <div>
-                            <h2>FoodVilla <i class="bi bi-cup-hot"></i></h2>
-                            <span><i>Angular, SpringBoot, Bootstrap</i></span>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-column align-items-end">
-                        <h4>April-July 2024</h4>
-                        <p class="take-break">
-                            <a href="https://github.com/shree031/Foodvilla-Angular" target="_blank"
-                                class="text-info">Frontend<i class="bi bi-github ps-2"></i></a>
-                            <a href="https://github.com/shree031/Foodvilla-SpringBoot" target="_blank"
-                                class="ps-2 text-info backend">Backend<i class="bi bi-github ps-2"></i></a>
-                        </p>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <p>
-                        Developed a responsive recipe, ingredient application with a focus on a user-friendly interface
-                        and a robust backend system to manage recipes, user data, and orders.
-                    </p>
-                </div>
-                <div class="collapse" id="foodvilla">
-                    <div class="pb-3 d-lg-flex justify-content-between w-100">
-                        <div>
-                            <h3 class="ps-4">Features:</h3>
-                            <ul>
-                                <li><b>Recipe Management:</b> Provides API endpoints for CRUD operations on recipes.
-                                </li>
-                                <li><b>User Authentication:</b> Secure user registration, login, and role-based access
-                                    control with password encryption.
-                                </li>
-                                <li><b>Ingredient Ordering:</b> Manages ingredient availability and user orders through
-                                    dedicated endpoints.
-                                </li>
-                                <li><b>Database Integration:</b> Uses PostgreSQL with Spring Data JPA for ORM.</li>
-                                <li><b>RESTful API:</b> Fully developed RESTful API for easy frontend integration.</li>
-                            </ul>
-                        </div>
-                        <video controls class="ps-3">
-                            <source src="Assets/Videos/Foodvilla.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="center w-100 mt-3">
-            <div class="box flex-column pt-3 px-4">
-                <div class="d-flex justify-content-between w-100">
-                    <div data-bs-toggle="collapse" data-bs-target="#portfolio" aria-expanded="false"
-                        aria-controls="portfolio" class="cursor-pointer project-click d-flex">
-                        <div class="project-arrow">
-                            <i class="bi bi-chevron-double-right toggleIcon fs-40"></i>
-                        </div>
-                        <div>
-                            <h2>Portfolio <i class="bi bi-file-earmark-person-fill"></i></h2>
-                            <p><i>Html, Css, JS, Bootstrap</i></p>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-column align-items-end">
-                        <h4>August 2024</h4>
-                        <p><a href="https://github.com/shree031/Portfolio" target="_blank" class="text-info">Go to
-                                project<i class="bi bi-github ps-2"></i></a></p>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <p>
-                        A responsive portfolio built with HTML, CSS, JavaScript, and Bootstrap, featuring GSAP
-                        animations
-                        that showcase my technical skills, diverse projects, and professional work experience.
-                    </p>
-                </div>
-                <div class="collapse" id="portfolio">
-                    <div>
-                        <h3 class="ps-4">Features:</h3>
-                        <ul>
-                            <li><b>Responsive Design: </b>Crafted to adapt seamlessly to different screen sizes.</li>
-                            <li><b>GSAP Animations:</b> Integrates GSAP (GreenSock Animation Platform) for dynamic,
-                                smooth
-                                animations throughout the portfolio.
-                            </li>
-                            <li><b>Custom Styles with SCSS: </b>Utilizes SCSS for advanced styling options, allowing for
-                                better management of styles.
-                            </li>
-                            <li><b>Interactive Elements:</b> JavaScript is used to enhance user interaction.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="center w-100 mt-3">
-            <div class="box flex-column pt-3 px-4">
-                <div class="d-flex justify-content-between w-100">
-                    <div data-bs-toggle="collapse" data-bs-target="#chromeExtensions" aria-expanded="false"
-                        aria-controls="chromeExtensions" class="cursor-pointer project-click d-flex">
-                        <div class="project-arrow">
-                            <i class="bi bi-chevron-double-right fs-40 toggleIcon"></i>
-                        </div>
-                        <div>
-                            <h2>Chrome Extensions <i class="bi bi-puzzle-fill"></i></h2>
-                            <p><i>JavaScript, HTML, CSS</i></p>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-column align-items-end">
-                        <h4>September 2024</h4>
-                        <p>
-                            <a href="https://github.com/shree031/Ad_blocker-Chrome-extension" target="_blank"
-                                class="text-info">
-                                Ad Blocker <i class="bi bi-github ps-2"></i>
-                            </a>
-                        </p>
-                        <p>
-                            <a href="https://github.com/shree031/Programmer-memes_Chrome-extension" target="_blank"
-                                class="text-info">
-                                Programmer Memes <i class="bi bi-github ps-2"></i>
-                            </a>
-                        </p>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <p>
-                        Two Chrome extensions designed to enhance browsing experiences and add a touch of fun.
-                        The "Ad Blocker" extension improves browsing by blocking unwanted ads, while "Programmer Memes"
-                        serves up programmer-related humor directly in the browser.
-                    </p>
-                </div>
-                <div class="collapse" id="chromeExtensions">
-                    <div>
-                        <h3 class="ps-4">Features:</h3>
-                        <ul>
-                            <li><b>Ad Blocker:</b> Blocks intrusive ads for a cleaner and faster browsing experience.
-                            </li>
-                            <li><b>Programmer Memes:</b> Provides a quick laugh with a collection of programming-related
-                                memes.
-                            </li>
-                            <li><b>Simple Interface:</b> Clean, user-friendly UI tailored to Chrome’s extension
-                                framework.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!--    <section id="project" class="center pt-5">-->
+<!--        <h2><span>Projects<i class="bi bi-code-slash ps-3"></i></span></h2>-->
+<!--        <div class="d-flex flex-wrap align-items-center justify-content-arround">-->
+<!--            <div class="center ">-->
+<!--                <div class="box center flex-column pt-4 px-4">-->
+<!--                    <div class="d-flex justify-content-between w-100">-->
+<!--                        <div data-bs-toggle="collapse" data-bs-target="#foodvilla" aria-expanded="false"-->
+<!--                             class="cursor-pointer d-flex align-items-start project-click" aria-controls="collapseExample">-->
+<!--                            <div class="project-arrow">-->
+<!--                                <i class="bi bi-chevron-double-right fs-40 toggleIcon"></i>-->
+<!--                            </div>-->
+<!--                            <div>-->
+<!--                                <h2>FoodVilla <i class="bi bi-cup-hot"></i></h2>-->
+<!--                                <span><i>Angular, SpringBoot, Bootstrap</i></span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="d-flex flex-column align-items-end">-->
+<!--                            <h4>April-July 2024</h4>-->
+<!--                            <p class="take-break">-->
+<!--                                <a href="https://github.com/shree031/Foodvilla-Angular" target="_blank"-->
+<!--                                   class="text-info">Frontend<i class="bi bi-github ps-2"></i></a>-->
+<!--                                <a href="https://github.com/shree031/Foodvilla-SpringBoot" target="_blank"-->
+<!--                                   class="ps-2 text-info backend">Backend<i class="bi bi-github ps-2"></i></a>-->
+<!--                            </p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="text-center">-->
+<!--                        <p>-->
+<!--                            Developed a responsive recipe, ingredient application with a focus on a user-friendly interface-->
+<!--                            and a robust backend system to manage recipes, user data, and orders.-->
+<!--                        </p>-->
+<!--                    </div>-->
+<!--                    <div class="collapse" id="foodvilla">-->
+<!--                        <div class="pb-3 d-lg-flex justify-content-between w-100">-->
+<!--                            <div>-->
+<!--                                <h3 class="ps-4">Features:</h3>-->
+<!--                                <ul>-->
+<!--                                    <li><b>Recipe Management:</b> Provides API endpoints for CRUD operations on recipes.-->
+<!--                                    </li>-->
+<!--                                    <li><b>User Authentication:</b> Secure user registration, login, and role-based access-->
+<!--                                        control with password encryption.-->
+<!--                                    </li>-->
+<!--                                    <li><b>Ingredient Ordering:</b> Manages ingredient availability and user orders through-->
+<!--                                        dedicated endpoints.-->
+<!--                                    </li>-->
+<!--                                    <li><b>Database Integration:</b> Uses PostgreSQL with Spring Data JPA for ORM.</li>-->
+<!--                                    <li><b>RESTful API:</b> Fully developed RESTful API for easy frontend integration.</li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                            <video controls class="ps-3">-->
+<!--                                <source src="Assets/Videos/Foodvilla.mp4" type="video/mp4">-->
+<!--                            </video>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="center ">-->
+<!--                <div class="box flex-column pt-3 px-4">-->
+<!--                    <div class="d-flex justify-content-between w-100">-->
+<!--                        <div data-bs-toggle="collapse" data-bs-target="#portfolio" aria-expanded="false"-->
+<!--                             aria-controls="portfolio" class="cursor-pointer project-click d-flex">-->
+<!--                            <div class="project-arrow">-->
+<!--                                <i class="bi bi-chevron-double-right toggleIcon fs-40"></i>-->
+<!--                            </div>-->
+<!--                            <div>-->
+<!--                                <h2>Portfolio <i class="bi bi-file-earmark-person-fill"></i></h2>-->
+<!--                                <p><i>Html, Css, JS, Bootstrap</i></p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="d-flex flex-column align-items-end">-->
+<!--                            <h4>August 2024</h4>-->
+<!--                            <p><a href="https://github.com/shree031/Portfolio" target="_blank" class="text-info">Go to-->
+<!--                                project<i class="bi bi-github ps-2"></i></a></p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="text-center">-->
+<!--                        <p>-->
+<!--                            A responsive portfolio built with HTML, CSS, JavaScript, and Bootstrap, featuring GSAP-->
+<!--                            animations-->
+<!--                            that showcase my technical skills, diverse projects, and professional work experience.-->
+<!--                        </p>-->
+<!--                    </div>-->
+<!--                    <div class="collapse" id="portfolio">-->
+<!--                        <div>-->
+<!--                            <h3 class="ps-4">Features:</h3>-->
+<!--                            <ul>-->
+<!--                                <li><b>Responsive Design: </b>Crafted to adapt seamlessly to different screen sizes.</li>-->
+<!--                                <li><b>GSAP Animations:</b> Integrates GSAP (GreenSock Animation Platform) for dynamic,-->
+<!--                                    smooth-->
+<!--                                    animations throughout the portfolio.-->
+<!--                                </li>-->
+<!--                                <li><b>Custom Styles with SCSS: </b>Utilizes SCSS for advanced styling options, allowing for-->
+<!--                                    better management of styles.-->
+<!--                                </li>-->
+<!--                                <li><b>Interactive Elements:</b> JavaScript is used to enhance user interaction.</li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="center">-->
+<!--                <div class="box flex-column pt-3 px-4">-->
+<!--                    <div class="d-flex justify-content-between w-100">-->
+<!--                        <div data-bs-toggle="collapse" data-bs-target="#chromeExtensions" aria-expanded="false"-->
+<!--                             aria-controls="chromeExtensions" class="cursor-pointer project-click d-flex">-->
+<!--                            <div class="project-arrow">-->
+<!--                                <i class="bi bi-chevron-double-right fs-40 toggleIcon"></i>-->
+<!--                            </div>-->
+<!--                            <div>-->
+<!--                                <h2>Chrome Extensions <i class="bi bi-puzzle-fill"></i></h2>-->
+<!--                                <p><i>JavaScript, HTML, CSS</i></p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="d-flex flex-column align-items-end">-->
+<!--                            <h4>September 2024</h4>-->
+<!--                            <p>-->
+<!--                                <a href="https://github.com/shree031/Ad_blocker-Chrome-extension" target="_blank"-->
+<!--                                   class="text-info">-->
+<!--                                    Ad Blocker <i class="bi bi-github ps-2"></i>-->
+<!--                                </a>-->
+<!--                            </p>-->
+<!--                            <p>-->
+<!--                                <a href="https://github.com/shree031/Programmer-memes_Chrome-extension" target="_blank"-->
+<!--                                   class="text-info">-->
+<!--                                    Programmer Memes <i class="bi bi-github ps-2"></i>-->
+<!--                                </a>-->
+<!--                            </p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="text-center">-->
+<!--                        <p>-->
+<!--                            Two Chrome extensions designed to enhance browsing experiences and add a touch of fun.-->
+<!--                            The "Ad Blocker" extension improves browsing by blocking unwanted ads, while "Programmer Memes"-->
+<!--                            serves up programmer-related humor directly in the browser.-->
+<!--                        </p>-->
+<!--                    </div>-->
+<!--                    <div class="collapse" id="chromeExtensions">-->
+<!--                        <div>-->
+<!--                            <h3 class="ps-4">Features:</h3>-->
+<!--                            <ul>-->
+<!--                                <li><b>Ad Blocker:</b> Blocks intrusive ads for a cleaner and faster browsing experience.-->
+<!--                                </li>-->
+<!--                                <li><b>Programmer Memes:</b> Provides a quick laugh with a collection of programming-related-->
+<!--                                    memes.-->
+<!--                                </li>-->
+<!--                                <li><b>Simple Interface:</b> Clean, user-friendly UI tailored to Chrome’s extension-->
+<!--                                    framework.-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
 
+
+    <section id="project" class="container py-5">
+        <h2 class="text-center mb-5">
+            <span>Projects <i class="bi bi-code-slash ps-3"></i></span>
+        </h2>
+
+        <div class="row row-cols-1 row-cols-md-2">
+            <div  class="col box m-0 card text-white">
+                <div class="h-100 text-center py-2">
+                    <img src="Assets/images/foodvilla.png" class="card-img-top project-img" alt="FoodVilla">
+                    <div class="card-body">
+                        <h5 class="card-title">FoodVilla</h5>
+                        <p><i>Angular, Spring Boot, Bootstrap, MySQL</i></p>
+                        <p class="card-text">A full-stack food ordering platform with user authentication, search, and cart features, built with Angular and Spring Boot.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div  class="col box m-0 card text-white">
+                <div class="h-100 text-center py-2">
+                    <img src="Assets/images/portfolio.png" class="card-img-top project-img" alt="Portfolio">
+                    <div class="card-body">
+                        <h5 class="card-title">Portfolio Website</h5>
+                        <p><i>HTML, CSS, JavaScript, Bootstrap</i></p>
+                        <p class="card-text">Personal portfolio website showcasing skills, experience, and projects with a responsive and modern design.</p>
+                    </div>
+                </div>
+            </div>
+            <div  class="col box m-0 card text-white">
+                <div class="h-100 text-center py-2">
+                    <img src="Assets/images/adblocker.png" class="card-img-top project-img" alt="Ad Blocker">
+                    <div class="card-body">
+                        <h5 class="card-title">Ad Blocker Extension</h5>
+                        <p><i>JavaScript, HTML, CSS, Manifest V3</i></p>
+                        <p class="card-text">Chrome extension that blocks ads and trackers to improve browsing experience.</p>
+                    </div>
+                </div>
+            </div>
+            <div  class="col box m-0 card text-white">
+                <div class="h-100 text-center py-2">
+                    <img src="Assets/images/memegenerator.png" class="card-img-top project-img" alt="Meme Generator">
+                    <div class="card-body">
+                        <h5 class="card-title">Meme Generator Extension</h5>
+                        <p><i>JavaScript, HTML, CSS, Meme API</i></p>
+                        <p class="card-text">Fun Chrome extension that fetches random memes and allows users to customize and download them.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </section>
+
+
+
+
+
 
     <!-- Resume -->
     <div class="resume">
