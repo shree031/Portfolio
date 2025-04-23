@@ -48,6 +48,12 @@ h2 span {
   width: 100%;
 }
 
+.project-card {
+  margin: 10px !important;
+  max-width: 550px !important;
+  padding: 5px 12px;
+}
+
 .h-500 {
   height: 500px;
 }
