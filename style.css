@@ -1,26 +1,23 @@
 body {
   background: conic-gradient(from 180deg, #201E43, #134B70, #508C9B);
   overflow-x: hidden;
-  font-size: 20px;
+  font-size: 22px;
   color: #F6F7F8;
 }
 
 .offcanvas {
   background-color: #201E43;
   color: #F6F7F8;
-  font-size: 22px;
+  font-size: 25px;
   width: 400px;
   padding: 30px;
 }
 
-h3 {
+h4 {
   padding-inline: 30px;
   margin-bottom: 20px;
-  margin-left: -25px;
 }
-
-h3 a:hover,
-h3 .active-nav {
+h4 a:hover, h4 .active-nav {
   color: #ADEFD1;
   font-weight: 700;
   text-shadow: -4px 2px rgba(224, 247, 250, 0.2784313725);
@@ -29,12 +26,11 @@ h3 .active-nav {
 }
 
 @media (min-width: 1000px) and (max-width: 1300px) {
-  h3 {
+  h4 {
     padding-right: 8px;
   }
 }
-
-h1 span {
+h2 span {
   border-radius: 25px;
   background: #134B70;
   padding: 14px;
@@ -94,8 +90,7 @@ h1 span {
   font-size: 50px;
 }
 
-.fs-40,
-.changing-text {
+.fs-40, .changing-text {
   font-size: 40px;
 }
 
@@ -134,13 +129,12 @@ h1 span {
 .skills {
   margin: 25px 50px;
   box-shadow: -8px 5px 13px -1px black;
-  width: 145px;
+  width: 140px;
   padding: 10px;
   border-radius: 30px;
 }
-
 .skills img {
-  height: 80px;
+  height: 70px;
   filter: drop-shadow(-7px 3px 1px black);
 }
 
@@ -159,12 +153,12 @@ h1 span {
 }
 
 .hello {
-  font-size: 120px !important;
+  font-size: 80px !important;
   text-shadow: 10px 6px black;
 }
 
 .icon-style i {
-  font-size: 28px;
+  font-size: 30px;
   display: inline-block;
   color: #F6F7F8;
   background: #134B70;
@@ -173,7 +167,6 @@ h1 span {
   padding: 10px 20px;
   margin: 10px;
 }
-
 .icon-style i:hover {
   background: #F6F7F8;
   color: #134B70;
@@ -202,7 +195,6 @@ h1 span {
   margin: 0 auto;
   display: block;
 }
-
 .carousel-item .carousel-caption {
   position: absolute;
   bottom: 0;
@@ -217,7 +209,6 @@ h1 span {
   border-radius: 34px;
   height: 35%;
 }
-
 .carousel-item .carousel-caption:hover {
   opacity: 1;
 }
@@ -254,7 +245,7 @@ nav img {
   cursor: pointer;
   border-radius: 10px;
   padding: 5px 10px;
-  font-size: 24px;
+  font-size: 25px;
 }
 
 .intro {
@@ -272,7 +263,6 @@ video {
 .hi-image {
   filter: drop-shadow(2px 4px 19px white);
   width: 65%;
-  max-width: 1000px;
 }
 
 .education img {
@@ -287,16 +277,13 @@ video {
     display: block;
     margin: 0 auto !important;
   }
-
   video {
     width: 100%;
   }
-
   .carousel-item img {
     width: 100%;
   }
 }
-
 .cursor-pointer {
   cursor: pointer;
 }
@@ -307,7 +294,7 @@ p a {
 
 .fix-nav {
   position: fixed;
-  background: rgb(32 30 67 / 82%);
+  background: rgba(32, 30, 67, 0.7);
   top: 0;
   width: 100%;
   z-index: 5;
@@ -328,80 +315,61 @@ section {
   body {
     font-size: 14px;
   }
-
   .hello {
-    font-size: 90px !important;
+    font-size: 60px !important;
   }
-
   .skills {
     margin: -3px -15px;
     box-shadow: 0 0 0 0;
   }
-  
-  .skills:hover {
-    box-shadow: 0px 0px 0px 0px black;
-  }
-  
   .skills img {
-    height: 60px;
+    height: 50px;
+    margin: 8px 10px;
   }
-
   .contact-section i {
-    font-size: 18px;
-    /* Adjust as needed */
+    font-size: 20px; /* Adjust as needed */
   }
-
   section {
     margin: 0 auto;
   }
-
   .year-cgpa {
     display: flex;
     width: 100%;
     justify-content: space-between;
   }
-
   .carousel-item img {
-    height: 300px !important;
+    height: 250px !important;
     padding: 0px 0px 40px 0px;
   }
-
   .fs-50 {
     font-size: 30px;
   }
-
-  .fs-40,
-  .changing-text {
+  .fs-40, .changing-text {
     font-size: 20px;
   }
-
   .offcanvas {
     width: 73vw !important;
   }
-
   .take-break {
     display: flex;
     flex-direction: column;
   }
-
   .take-break .backend {
     padding-left: 0 !important;
   }
-
   nav img {
     height: 60px;
   }
-
   .resume {
     display: none;
   }
-
   .education img {
     margin-bottom: 15px;
-    border-radius: 20px;
   }
-
   .box {
     background: rgba(19, 75, 112, 0.1);
+    margin: 0px 15px;
   }
 }
+
+/*# sourceMappingURL=style.css.map */

@@ -26,12 +26,12 @@
                     <span class="navbar-toggler-icon text-light"></span>
                 </button>
                 <div class="collapse navbar-collapse d-lg-flex flex-wrap">
-                    <h3><a class="nav-item active-nav" href="#home">Home</a></h3>
-                    <h3><a class="nav-item" href="#skills">Skills</a></h3>
-                    <h3><a class="nav-item" href="#education">Education</a></h3>
-                    <h3><a class="nav-item" href="#work">Work-experience</a></h3>
-                    <h3><a class="nav-item" href="#project">Projects</a></h3>
-                    <h3><a class="nav-item" href="#contact">Contact</a></h3>
+                    <h4><a class="nav-item active-nav" href="#home">Home</a></h4>
+                    <h4><a class="nav-item" href="#skills">Skills</a></h4>
+                    <h4><a class="nav-item" href="#education">Education</a></h4>
+                    <h4><a class="nav-item" href="#work">Work-experience</a></h4>
+                    <h4><a class="nav-item" href="#project">Projects</a></h4>
+                    <h4><a class="nav-item" href="#contact">Contact</a></h4>
                 </div>
             </div>
         </div>
@@ -63,8 +63,8 @@
         <img draggable=false src="Assets/images/hi.gif" class="hi-image">
         <div class="intro text-center">
             <span class="hello"><b>Hello!</b></span>
-            <h1 class="fs-50">I'm Shreedevi Patil</h1>
-            <span class="fs-40 cursive">I am into <span class="changing-text">Software Development</span></span>
+            <h2 class="fs-40">I'm Shreedevi Patil</h2>
+            <span class="fs-30 cursive">I am into <span class="changing-text">Software Development</span></span>
             <p> Hi there! I'm a passionate Software Developer with two years of experience at Xcaliber Infotech,
                 where I specialize in building robust and efficient web applications.
             </p>
@@ -72,13 +72,9 @@
     </section>
     <!--    Skills-->
     <section id="skills" class="center flex-column">
-        <h1><span>Skills & Expertise<i class="bi bi-bar-chart ps-3"></i></span></h1>
+        <h2><span>Skills & Expertise<i class="bi bi-bar-chart ps-3"></i></span></h2>
         <div class="w-100 center">
-            <div class="d-flex flex-wrap center box py-5">
-                <div class="skills d-flex flex-column center">
-                    <img draggable=false src="Assets/images/c++.png" />
-                    <h4>C++</h4>
-                </div>
+            <div class="d-flex flex-wrap justify-content-evenly align-items-center box py-5">
                 <div class="skills d-flex flex-column center">
                     <img draggable=false src="Assets/images/java.png" />
                     <h4>Java</h4>
@@ -92,8 +88,8 @@
                     <h4>Javascript</h4>
                 </div>
                 <div class="skills d-flex flex-column center">
-                    <img draggable=false src="Assets/images/ts.png" />
-                    <h4>Typescript</h4>
+                    <img draggable=false src="Assets/images/springboot.png" />
+                    <h4>Springboot</h4>
                 </div>
                 <div class="skills d-flex flex-column center">
                     <img draggable=false src="Assets/images/angular.png" />
@@ -107,7 +103,7 @@
                     <img draggable=false src="Assets/images/html.png" />
                     <h4>HTML</h4>
                 </div>
-                <div class="skills d-flex flex-column center">
+                <div class="skills d-flex flex-column align-items-center justify-content-evenly">
                     <img draggable=false src="Assets/images/css.png" />
                     <h4>CSS</h4>
                 </div>
@@ -124,6 +120,10 @@
                     <h4>Chart.js</h4>
                 </div>
                 <div class="skills d-flex flex-column center">
+                    <img draggable=false src="Assets/images/aws.png" />
+                    <h4>AWS</h4>
+                </div>
+                <div class="skills d-flex flex-column center">
                     <img draggable=false src="Assets/images/postgres.png" />
                     <h4>Postgres</h4>
                 </div>
@@ -134,9 +134,101 @@
             </div>
         </div>
     </section>
+    <!--    Work-experience-->
+    <section id="work" class="center flex-column pt-5">
+        <h2><span>Work experience<i class="bi bi-briefcase-fill ps-3"></i></span></h2>
+        <div class="center w-100">
+            <div id="carouselExampleIndicators" class="carousel slide box w-100" data-bs-ride="carousel">
+                <div class="carousel-indicators mb-1">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                            aria-label="Slide 6"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="mt-4 text-center">
+                        <h2>Xcaliber Infotech <i class="bi bi-buildings"></i></h2>
+                        <p>Software developer (Nov-2022 - Present)</p>
+                    </div>
+                    <hr class="border border-2 mt-2 mb-0">
+                    <div class="carousel-item active">
+                        <img draggable=false src="Assets/images/reCaptcha.png" class="" alt="Image 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Integrated reCAPTCHA in the Web App</h5>
+                            <p>Ensured security by seamlessly integrating reCAPTCHA into the web application, protecting
+                                against automated threats.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img draggable=false src="Assets/images/Notification.png" class="" alt="Image 5">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Integrated Push Notification [Ionic in Android and iOS]</h5>
+                            <p>From code to connection—implemented push notifications on both Android and iOS,
+                                delivering a consistent user experience across platforms.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img draggable=false src="Assets/images/Chart.js.png" class="" alt="Image 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Using Chart.js Visualized Data</h5>
+                            <p>Enhanced data analysis with dynamic Chart.js visualizations, turning complex data into
+                                actionable insights.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img draggable=false src="Assets/images/Maven-Gradle.png" class="" alt="Image 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Upgraded Build Tool from Maven to Gradle</h5>
+                            <p>Streamlined build processes by upgrading from Maven to Gradle, boosting efficiency and
+                                flexibility in project management.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img draggable=false src="Assets/images/log4j.png" class="" alt="Image 4">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Upgraded Log4j to Log4j2</h5>
+                            <p>Improved logging capabilities by upgrading from Log4j to Log4j2, enhancing
+                                performance and security.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img draggable=false src="Assets/images/code.png" class="" alt="Image 6">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Contributed to code reviews</h5>
+                            <p>Ensured code quality and fostered collaboration through thorough and constructive
+                                code reviews.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+
+        </div>
+    </section>
+
     <!-- Education-->
-    <section id="education" class="center flex-column pt-5">
-        <h1><span>Education<i class="bi bi-mortarboard-fill ps-3"></i></span></h1>
+   <!-- <section id="education" class="center flex-column pt-5">
+        <h2><span>Education<i class="bi bi-mortarboard-fill ps-3"></i></span></h2>
         <div class="d-flex justify-content-center w-100 row">
             <div class="box d-lg-flex education p-4 align-items-center col-lg-8 col-md-9 col-12">
                 <img draggable=false src="Assets/images/mit.png" width="200px">
@@ -197,102 +289,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
-    <!--    Work-experience-->
-    <section id="work" class="center flex-column pt-5">
-        <h1><span>Work experience<i class="bi bi-briefcase-fill ps-3"></i></span></h1>
-        <div class="center w-100">
-            <div id="carouselExampleIndicators" class="carousel slide box w-100" data-bs-ride="carousel">
-                <div class="carousel-indicators mb-1">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                        aria-label="Slide 5"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
-                        aria-label="Slide 6"></button>
-                </div>
-
-                <div class="carousel-inner">
-                    <div class="mt-4 text-center">
-                        <h2>Xcaliber Infotech <i class="bi bi-buildings"></i></h2>
-                        <p>Software developer (Nov-2022 - Present)</p>
-                    </div>
-                    <hr class="border border-2 mt-2 mb-0">
-                    <div class="carousel-item active">
-                        <img draggable=false src="Assets/images/reCaptcha.png" class="" alt="Image 1">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Integrated reCAPTCHA in the Web App</h5>
-                            <p>Ensured security by seamlessly integrating reCAPTCHA into the web application, protecting
-                                against automated threats.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img draggable=false src="Assets/images/Notification.png" class="" alt="Image 5">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Integrated Push Notification [Ionic in Android and iOS]</h5>
-                            <p>From code to connection—implemented push notifications on both Android and iOS,
-                                delivering a consistent user experience across platforms.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img draggable=false src="Assets/images/Chart.js.png" class="" alt="Image 2">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Using Chart.js Visualized Data</h5>
-                            <p>Enhanced data analysis with dynamic Chart.js visualizations, turning complex data into
-                                actionable insights.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img draggable=false src="Assets/images/Maven-Gradle.png" class="" alt="Image 3">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Upgraded Build Tool from Maven to Gradle</h5>
-                            <p>Streamlined build processes by upgrading from Maven to Gradle, boosting efficiency and
-                                flexibility in project management.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img draggable=false src="Assets/images/log4j.png" class="" alt="Image 4">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Upgraded Log4j to Log4j2</h5>
-                            <p>Improved logging capabilities by upgrading from Log4j to Log4j2, enhancing
-                                performance and security.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img draggable=false src="Assets/images/code.png" class="" alt="Image 6">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Contributed to code reviews</h5>
-                            <p>Ensured code quality and fostered collaboration through thorough and constructive
-                                code reviews.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-
-
-        </div>
-    </section>
     <!--    Projects-->
     <section id="project" class="center flex-column pt-5">
-        <h1><span>Projects<i class="bi bi-code-slash ps-3"></i></span></h1>
+        <h2><span>Projects<i class="bi bi-code-slash ps-3"></i></span></h2>
         <div class="center w-100">
             <div class="box center flex-column pt-4 px-4">
                 <div class="d-flex justify-content-between w-100">
@@ -319,8 +320,7 @@
                 <div class="text-center">
                     <p>
                         Developed a responsive recipe, ingredient application with a focus on a user-friendly interface
-                        and
-                        a robust backend system to manage recipes, user data, and orders.
+                        and a robust backend system to manage recipes, user data, and orders.
                     </p>
                 </div>
                 <div class="collapse" id="foodvilla">
