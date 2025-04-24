@@ -5,7 +5,7 @@ $secondary-color: #508C9B;
 $accent-color: #ADEFD1;
 $text-color: #F6F7F8;
 $bubble-gradient: #D4F1F4;
-$bubble-shadow: black;
+$bubble-shadow: #2a7baf;
 $shadow: black;
 
 body {
@@ -13,14 +13,6 @@ body {
   overflow-x: hidden;
   font-size: 22px;
   color: $text-color;
-}
-
-.offcanvas {
-  background-color: $background-color;
-  color: $text-color;
-  font-size: 25px;
-  width: 400px;
-  padding: 30px;
 }
 
 h4 {
@@ -58,7 +50,7 @@ h2 span {
 
 .project-card {
   margin: 10px !important;
-  max-width: 550px !important;
+  max-width: 500px !important;
   padding: 5px 12px;
 }
 
@@ -170,12 +162,12 @@ h2 span {
 
   img {
     height: 70px;
-    filter: drop-shadow(-7px 3px 1px $bubble-shadow);
+    filter: drop-shadow(-7px 3px 1px black);
   }
 }
 
 .skills:hover {
-  box-shadow: 0px 0px 18px 11px $shadow;
+  box-shadow: 0px 0px 18px 11px $bubble-shadow;
 }
 
 .nav-item {
@@ -194,7 +186,7 @@ h2 span {
 }
 
 .icon-style {
-  top: 10px;
+  top: 12px;
   right: 10px;
 }
 
@@ -409,10 +401,6 @@ section {
     font-size: 20px;
   }
 
-  .offcanvas {
-    width: 73vw !important;
-  }
-
   .take-break {
     display: flex;
     flex-direction: column;
@@ -447,8 +435,28 @@ section {
     flex-direction: column;
     top: 10px;
     right: 10px;
+
     a {
       display: block !important;
     }
   }
+  .skills:hover {
+    box-shadow: 0px 0px 0px 0px $bubble-shadow;
+  }
+  .skills img:hover {
+    filter: drop-shadow(-22px 3px 10px $shadow);
+  }
+  .project-card {
+    margin: 7px !important;
+    //width: 320px !important;
+    max-width: 332px !important;
+    padding: 5px 6px;
+  }
 }
+//@media (min-width: 950px) and (max-width: 1156px) {
+//  .project-card {
+//    margin: 10px !important;
+//    max-width: 400px !important;
+//    padding: 5px 12px;
+//  }
+//}

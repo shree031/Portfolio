@@ -5,14 +5,6 @@ body {
   color: #F6F7F8;
 }
 
-.offcanvas {
-  background-color: #201E43;
-  color: #F6F7F8;
-  font-size: 25px;
-  width: 400px;
-  padding: 30px;
-}
-
 h4 {
   padding-inline: 30px;
   margin-bottom: 20px;
@@ -46,7 +38,7 @@ h2 span {
 
 .project-card {
   margin: 10px !important;
-  max-width: 550px !important;
+  max-width: 500px !important;
   padding: 5px 12px;
 }
 
@@ -156,7 +148,7 @@ h2 span {
 }
 
 .skills:hover {
-  box-shadow: 0px 0px 18px 11px black;
+  box-shadow: 0px 0px 18px 11px #2a7baf;
 }
 
 .nav-item {
@@ -175,7 +167,7 @@ h2 span {
 }
 
 .icon-style {
-  top: 10px;
+  top: 12px;
   right: 10px;
 }
 
@@ -369,9 +361,6 @@ section {
   .fs-40, .changing-text {
     font-size: 20px;
   }
-  .offcanvas {
-    width: 73vw !important;
-  }
   .take-break {
     display: flex;
     flex-direction: column;
@@ -402,6 +391,17 @@ section {
   }
   .icon-style a {
     display: block !important;
+  }
+  .skills:hover {
+    box-shadow: 0px 0px 0px 0px #2a7baf;
+  }
+  .skills img:hover {
+    filter: drop-shadow(-22px 3px 10px black);
+  }
+  .project-card {
+    margin: 7px !important;
+    max-width: 332px !important;
+    padding: 5px 6px;
   }
 }
 
