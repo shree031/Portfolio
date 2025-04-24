@@ -53,11 +53,15 @@ h2 span {
   max-width: 500px !important;
   padding: 5px 12px;
 }
-
+.project-card {
+  transition: transform 0.4s ease;
+}
+.project-card:hover {
+  transform: scale(1.05);
+}
 .toggle-bar {
   background-color: $primary-color;
   border: white;
-
 }
 
 // Height Classes
@@ -266,7 +270,7 @@ nav {
     position: relative;
     top: 0;
     right: 0;
-    filter: drop-shadow(7px 2px 4px $shadow);
+    filter: drop-shadow(-1px 4px 3px #fff);
   }
 }
 
@@ -343,6 +347,17 @@ p a {
 
 section {
   margin: 3rem;
+}
+
+.hidden-section {
+  opacity: 0 !important;
+  transform: translateY(30px)!important;;
+  transition: all 0.6s ease-out;
+}
+
+.show-section {
+  opacity: 1!important;;
+  transform: translateY(0)!important;;
 }
 
 
