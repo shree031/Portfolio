@@ -394,8 +394,13 @@ section {
   }
   .project-card {
     margin: 10px !important;
-    max-width: 360px !important;
+    max-width: 380px !important;
     padding: 5px 12px;
+  }
+  .icon-style {
+    flex-direction: column;
+    top: 10px;
+    right: 10px;
   }
 }
 
