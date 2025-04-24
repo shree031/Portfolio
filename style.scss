@@ -186,6 +186,7 @@ h2 span {
 }
 
 .icon-style {
+  z-index: 10;
   top: 12px;
   right: 10px;
 }
@@ -278,16 +279,6 @@ nav {
   font-style: italic;
 }
 
-.resume {
-  position: fixed;
-  bottom: 50px;
-  right: 10px;
-  background: $background-color;
-  cursor: pointer;
-  border-radius: 10px;
-  padding: 5px 10px;
-  font-size: 25px;
-}
 
 .intro {
   display: flex;
@@ -414,9 +405,6 @@ section {
     height: 60px;
   }
 
-  .resume {
-    display: none;
-  }
 
   .education img {
     margin-bottom: 15px;
@@ -435,17 +423,16 @@ section {
     flex-direction: column;
     top: 10px;
     right: 10px;
-
-    a {
-      display: block !important;
-    }
   }
+
   .skills:hover {
     box-shadow: 0px 0px 0px 0px $bubble-shadow;
   }
+
   .skills img:hover {
     filter: drop-shadow(-22px 3px 10px $shadow);
   }
+
   .project-card {
     margin: 7px !important;
     //width: 320px !important;
