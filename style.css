@@ -50,11 +50,6 @@ h2 span {
   transform: scale(1.05);
 }
 
-.toggle-bar {
-  background-color: #134B70;
-  border: white;
-}
-
 .h-500 {
   height: 500px;
 }
@@ -259,6 +254,11 @@ nav img {
   color: #ADEFD1;
   font-family: cursive;
   font-style: italic;
+}
+
+.fixed-height {
+  display: inline-block;
+  min-height: 60px;
 }
 
 .intro {
