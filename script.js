@@ -1,115 +1,123 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const circleContainer = document.getElementById("circle-container");
-  const numberOfCircles = 7; // Number of circles to generate
-  const minSize = 80;
-  const maxSize = 250;
-  const gridCols = 2; // Number of columns in the grid
-  const gridRows = 2; // Number of rows in the grid
-  const cellWidth = window.innerWidth / gridCols;
-  const cellHeight = window.innerHeight / gridRows;
+document.addEventListener("DOMContentLoaded", () => {
+  const year = document.getElementById("currentYear");
+  if (year) year.textContent = new Date().getFullYear();
 
-  function isMobileDevice() {
-    return window.innerWidth <= 768;
-  }
-
-  if (isMobileDevice()) {
-    circleContainer.remove();
-  } else {
-    for (let i = 0; i < numberOfCircles; i++) {
-      const size = getRandomSize();
-      const cellX = Math.floor(i % gridCols);
-      const cellY = Math.floor(i / gridCols);
-      const position = getRandomPositionWithinCell(cellX, cellY, size);
-
-      const circleElement = document.createElement("div");
-      circleElement.classList.add("circle");
-      Object.assign(circleElement.style, {
-        width: `${size}px`,
-        height: `${size}px`,
-        left: `${position.x}px`,
-        top: `${position.y}px`,
-        zIndex: `-1`,
-      });
-      circleContainer.appendChild(circleElement);
+  // Dark/light theme toggle. The visitor's choice is remembered in this browser.
+  const themeToggle = document.getElementById("themeToggle");
+  const themeIcon = themeToggle?.querySelector("i");
+  const themeLabel = themeToggle?.querySelector("span");
+  const applyTheme = (theme) => {
+    const isLight = theme === "light";
+    document.documentElement.dataset.theme = isLight ? "light" : "dark";
+    if (themeToggle) {
+      themeToggle.setAttribute("aria-pressed", String(isLight));
+      themeToggle.setAttribute("aria-label", `Switch to ${isLight ? "dark" : "light"} theme`);
     }
+    if (themeIcon) themeIcon.className = isLight ? "bi bi-moon-stars" : "bi bi-sun";
+    if (themeLabel) themeLabel.textContent = isLight ? "Dark mode" : "Light mode";
+    const themeColor = document.querySelector('meta[name="theme-color"]');
+    if (themeColor) themeColor.setAttribute("content", isLight ? "#f4f7fb" : "#080d18");
+  };
+  let savedTheme = "dark";
+  try { savedTheme = localStorage.getItem("portfolio-theme") || "dark"; } catch (_) { /* Storage may be unavailable. */ }
+  applyTheme(savedTheme);
+  themeToggle?.addEventListener("click", () => {
+    const nextTheme = document.documentElement.dataset.theme === "light" ? "dark" : "light";
+    applyTheme(nextTheme);
+    try { localStorage.setItem("portfolio-theme", nextTheme); } catch (_) { /* Theme still works without storage. */ }
+  });
+
+  // Keep the page usable even if an animation CDN is unavailable.
+  const revealItems = document.querySelectorAll("[data-reveal]");
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (window.gsap && !reducedMotion) {
+    if (window.ScrollTrigger) gsap.registerPlugin(ScrollTrigger);
+    if (window.TextPlugin) gsap.registerPlugin(TextPlugin);
+
+    revealItems.forEach((element) => {
+      gsap.to(element, {
+        opacity: 1,
+        y: 0,
+        duration: 0.75,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: element,
+          start: "top 88%",
+          once: true
+        }
+      });
+    });
+  } else {
+    revealItems.forEach((element) => {
+      element.style.opacity = "1";
+      element.style.transform = "none";
+    });
   }
 
-  function getRandomSize() {
-    return Math.random() * (maxSize - minSize) + minSize;
-  }
-
-  function getRandomPositionWithinCell(cellX, cellY, size) {
-    const x = cellX * cellWidth + Math.random() * (cellWidth - size);
-    const y = cellY * cellHeight + Math.random() * (cellHeight - size);
-    return { x, y };
-  }
-
-  gsap.registerPlugin(TextPlugin);
-  const phrases = [
-    "Frontend Development",
-    "Backend Development",
-    "Web Development",
-    "Full-stack Development",
-    "Web-App Development",
-  ];
-
-  let index = 0;
-
-  function typeWriterEffect() {
-    const textElement = document.querySelector(".changing-text");
-    const currentText = phrases[index];
-
-    // Animate typing effect
-    gsap.to(textElement, {
-      duration: currentText.length * 0.1, // Speed of typing
-      text: currentText,
-      ease: "none",
-      onComplete: () => {
-        // Pause for a bit before starting the backspace effect
-        gsap.delayedCall(1, () => {
-          backspaceEffect(currentText, () => {
-            // Move to the next phrase
-            index = (index + 1) % phrases.length;
-            typeWriterEffect();
+  // GSAP TextPlugin typing effect with a graceful static fallback.
+  const changingText = document.querySelector(".changing-text");
+  const phrases = ["backend systems", "full-stack applications", "cloud solutions", "reliable software"];
+  if (changingText && window.gsap && window.TextPlugin && !reducedMotion) {
+    let phraseIndex = 0;
+    const typeNext = () => {
+      const phrase = phrases[phraseIndex];
+      gsap.to(changingText, {
+        duration: Math.max(0.7, phrase.length * 0.055),
+        text: phrase,
+        ease: "none",
+        onComplete: () => {
+          gsap.delayedCall(1.5, () => {
+            gsap.to(changingText, {
+              duration: Math.max(0.35, phrase.length * 0.025),
+              text: "",
+              ease: "none",
+              onComplete: () => {
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+                typeNext();
+              }
+            });
           });
+        }
+      });
+    };
+    changingText.textContent = "";
+    typeNext();
+  } else if (changingText) {
+    changingText.textContent = "backend systems";
+  }
+
+  // Active navigation link while scrolling.
+  const sections = document.querySelectorAll("main section[id]");
+  const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+  if ("IntersectionObserver" in window) {
+    const sectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        navLinks.forEach((link) => {
+          link.classList.toggle("active", link.getAttribute("href") === `#${entry.target.id}`);
         });
-      },
-    });
+      });
+    }, { rootMargin: "-35% 0px -55% 0px" });
+    sections.forEach((section) => sectionObserver.observe(section));
   }
 
-  function backspaceEffect(text, onComplete) {
-    const textElement = document.querySelector(".changing-text");
-    let currentLength = text.length;
-
-    const interval = setInterval(() => {
-      currentLength--;
-      textElement.textContent = text.slice(0, currentLength);
-
-      if (currentLength === 0) {
-        clearInterval(interval);
-        onComplete();
-      }
-    }, 50); // Speed of backspace
-  }
-
-  typeWriterEffect();
-
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('show-section');
-      }else {
-        entry.target.classList.remove('show-section'); // optional if you want them to re-hide
+  // Close the mobile menu after choosing a section.
+  const navCollapse = document.getElementById("mainNav");
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      if (window.bootstrap && navCollapse && navCollapse.classList.contains("show")) {
+        bootstrap.Collapse.getOrCreateInstance(navCollapse).hide();
       }
     });
-  }, {
-    threshold: 0.2, // triggers when 30% of the element is visible
-    rootMargin: "0px 0px -50px 0px" // or adjust bottom margin to delay trigger
   });
-  
-  document.querySelectorAll('.hidden-section').forEach(section => {
-    observer.observe(section);
-  });
-  
+
+  // Back-to-top control.
+  const backToTop = document.querySelector(".back-to-top");
+  const updateBackToTop = () => {
+    if (backToTop) backToTop.classList.toggle("is-visible", window.scrollY > 500);
+  };
+  window.addEventListener("scroll", updateBackToTop, { passive: true });
+  updateBackToTop();
+  backToTop?.addEventListener("click", () => window.scrollTo({ top: 0, behavior: reducedMotion ? "auto" : "smooth" }));
 });

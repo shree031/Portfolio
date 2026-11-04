@@ -1,308 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="icon" type="Assets/images/favicon" href="Assets/images/favicon.ico">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- Bootstrap Icons CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d18">
+  <meta name="description" content="Shreedevi Patil — Software Engineer working across backend engineering, full-stack development and cloud technologies.">
+  <meta property="og:title" content="Shreedevi Patil | Software Engineer">
+  <meta property="og:description" content="Professional engineering experience across backend systems, full-stack applications, cloud infrastructure and security.">
+  <meta property="og:type" content="website">
+  <title>Shreedevi Patil | Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-<div id="circle-container"></div>
-<nav>
-    <div class="w-100 center align-items-center justify-content-between p-3">
-        <img draggable=false src="Assets/images/shreedevi.png" alt="Logo">
-    </div>
-</nav>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="noise-overlay" aria-hidden="true"></div>
 
-<div>
-    <div class="position-absolute icon-style">
-        <a href="https://github.com/shree031"><i class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/shreedevi-patil-tech/"><i class="bi bi-linkedin"></i></a>
-        <a href="mailto:shreedevi031@gmail.com"><i class="bi bi-envelope-at"></i></a>
-        <a href="Assets/Files/Shreedevi_patil_resume.pdf" target="_blank">
-            <i class="bi bi-file-text"></i>
-        </a>
-    </div>
-</div>
-<section id="home" class="d-lg-flex justify-content-around p-5 m-auto m-2">
-    <img draggable=false src="Assets/images/hi.gif" class="hi-image">
-    <div class="intro text-center">
-        <span class="hello"><b>Hello!</b></span>
-        <h2 class="fs-40">I'm Shreedevi Patil</h2>
-        <span class="fs-30 cursive fixed-height">I am into <span class="changing-text">Software Development</span></span>
-        <p> Hi there! I'm a passionate Software Developer with two years of experience at Xcaliber Infotech,
-            where I specialize in building robust and efficient web applications.
-        </p>
-    </div>
-</section>
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg navbar-dark container py-3" aria-label="Main navigation">
+      <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+              aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav align-items-lg-center gap-lg-3">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#highlights">Engineering Highlights</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item ms-lg-2"><a class="btn btn-outline-accent btn-sm px-3" href="#contact">Let's talk <i class="bi bi-arrow-up-right ms-1" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+      <button class="theme-toggle ms-auto" id="themeToggle" type="button" aria-label="Switch to light theme" aria-pressed="false">
+        <i class="bi bi-sun" aria-hidden="true"></i><span>Light mode</span>
+      </button>
+    </nav>
+  </header>
 
-<!--    Skills-->
-<section id="skills" class="center flex-column hidden-section">
-    <h2><span>Skills & Expertise<i class="bi bi-bar-chart ps-3"></i></span></h2>
-    <div class="w-100 center">
-        <div class="d-flex flex-wrap justify-content-evenly align-items-center box py-5">
-            <div class="skills fade-in d-flex flex-column center">
-                <img draggable=false src="Assets/images/java.png"/>
-                <h4>Java</h4>
+  <main>
+    <section id="home" class="hero-section section-shell">
+      <div class="container hero-container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7 hero-copy" data-reveal>
+            <div class="eyebrow"><span class="status-dot"></span> SOFTWARE ENGINEER <span class="eyebrow-divider">/</span> PUNE, INDIA</div>
+            <p class="hero-kicker">Hello, I'm</p>
+            <h1>Shreedevi<br><span class="gradient-text">Patil.</span></h1>
+            <div class="hero-role">Backend <span class="text-accent">·</span> Full Stack <span class="text-accent">·</span> Cloud Engineering</div>
+            <p class="hero-description">
+              Software Engineer with four years of experience building backend services, full-stack applications and cloud-integrated solutions. I enjoy solving complex engineering problems and delivering reliable, maintainable software.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-accent" href="#highlights">Explore engineering highlights <i class="bi bi-arrow-down-right ms-2"></i></a>
+              <a class="btn btn-quiet" href="Assets/Files/Shreedevi_patil_resume.pdf" target="_blank" rel="noopener">View resume <i class="bi bi-file-earmark-pdf ms-2"></i></a>
             </div>
-            <div class="skills fade-in d-flex flex-column center">
-                <img draggable=false src="Assets/images/python.png"/>
-                <h4>Python</h4>
+            <div class="hero-socials" aria-label="Social links">
+              <a href="https://github.com/shree031" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+              <a href="https://www.linkedin.com/in/shreedevi-patil-tech/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="mailto:shreedevi031@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
             </div>
-            <div class="skills fade-in d-flex flex-column center">
-                <img draggable=false src="Assets/images/js.png"/>
-                <h4>Javascript</h4>
+          </div>
+          <div class="col-lg-5 hero-visual" data-reveal data-reveal-delay="150">
+            <div class="hero-art-wrap">
+              <div class="orbit orbit-one"></div>
+              <div class="orbit orbit-two"></div>
+              <div class="hero-art-card">
+                <div class="art-card-top"><span></span><span></span><span></span><small>developer.profile</small></div>
+                <div class="code-art">
+                  <div><span class="code-muted">01</span> <span class="code-purple">const</span> <span class="code-blue">developer</span> = {</div>
+                  <div class="code-indent"><span class="code-blue">name</span>: <span class="code-green">'Shreedevi'</span>,</div>
+                  <div class="code-indent"><span class="code-blue">focus</span>: [</div>
+                  <div class="code-indent code-indent-2"><span class="code-green">'Backend'</span>,</div>
+                  <div class="code-indent code-indent-2"><span class="code-green">'Cloud'</span>,</div>
+                  <div class="code-indent code-indent-2"><span class="code-green">'Full-stack'</span></div>
+                  <div class="code-indent">],</div>
+                  <div class="code-indent"><span class="code-blue">mindset</span>: <span class="code-green">'Keep learning'</span></div>
+                  <div>};</div>
+                  <div class="code-spacer"></div>
+                  <div><span class="code-purple">while</span> (<span class="code-orange">curious</span>) {</div>
+                  <div class="code-indent"><span class="code-blue">build</span>(); <span class="code-comment">// make it better</span></div>
+                  <div>}</div>
+                </div>
+                <div class="art-card-footer"><span class="status-dot"></span> Available for meaningful challenges</div>
+              </div>
+              <div class="floating-chip chip-java"><i class="bi bi-cup-hot"></i> Java</div>
+              <div class="floating-chip chip-cloud"><i class="bi bi-cloud"></i> AWS</div>
+              <div class="floating-chip chip-code"><i class="bi bi-code-slash"></i> APIs</div>
             </div>
-            <div class="skills fade-in d-flex flex-column center">
-                <img draggable=false src="Assets/images/springboot.png"/>
-                <h4>Springboot</h4>
-            </div>
-            <div class="skills fade-in d-flex flex-column center">
-                <img draggable=false src="Assets/images/angular.png"/>
-                <h4>Angular</h4>
-            </div>
-            <div class="skills fade-in d-flex flex-column center">
-                <img draggable=false src="Assets/images/ionic.png"/>
-                <h4>Ionic</h4>
-            </div>
-            <div class="skills fade-in d-flex flex-column center">
-                <img draggable=false src="Assets/images/html.png"/>
-                <h4>HTML</h4>
-            </div>
-            <div class="skills fade-in d-flex flex-column align-items-center justify-content-evenly">
-                <img draggable=false src="Assets/images/css.png"/>
-                <h4>CSS</h4>
-            </div>
-            <div class="skills fade-in d-flex flex-column center">
-                <img draggable=false src="Assets/images/sass.png"/>
-                <h4>Sass</h4>
-            </div>
-            <div class="skills fade-in d-flex flex-column center">
-                <img draggable=false src="Assets/images/bootstrap.png"/>
-                <h4>Bootstrap</h4>
-            </div>
-            <div class="skills fade-in d-flex flex-column center">
-                <img draggable=false src="Assets/images/chartjs.png"/>
-                <h4>Chart.js</h4>
-            </div>
-            <div class="skills fade-in d-flex flex-column center">
-                <img draggable=false src="Assets/images/aws.png"/>
-                <h4>AWS</h4>
-            </div>
-            <div class="skills fade-in d-flex flex-column center">
-                <img draggable=false src="Assets/images/postgres.png"/>
-                <h4>Postgres</h4>
-            </div>
-            <div class="skills fade-in d-flex flex-column center">
-                <img draggable=false src="Assets/images/mysql.png"/>
-                <h4>Mysql</h4>
-            </div>
+          </div>
         </div>
+        <a class="scroll-cue" href="#about"><span></span> SCROLL TO EXPLORE</a>
+      </div>
+    </section>
+
+    <section id="about" class="content-section section-shell">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <span class="section-index">01 / ABOUT</span>
+          <h2>Building with <span class="gradient-text">purpose.</span></h2>
+          <p>A little about my journey and the way I approach engineering.</p>
+        </div>
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-7" data-reveal>
+            <div class="surface-card about-card h-100">
+              <div class="card-label"><i class="bi bi-person-workspace"></i> WHO I AM</div>
+              <h3>Curious by nature.<br>Developer by craft.</h3>
+              <p>
+                I'm a Software Engineer with four years of professional experience across full-stack application development, backend engineering and cloud-based systems. My work spans Java, Spring Boot, Angular, AWS and modern engineering practices.
+              </p>
+              <p>
+                I enjoy understanding systems end to end — from building APIs and integrating services to improving reliability, observability, security and deployment workflows. I'm interested in solving practical engineering challenges and continuously improving how software is built and operated.
+              </p>
+              <div class="about-tags">
+                <span>Problem solving</span><span>Clean code</span><span>Continuous learning</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5" data-reveal data-reveal-delay="100">
+            <div class="about-side-grid">
+              <div class="surface-card mini-stat"><span class="stat-value stat-word">4+ years</span><span class="stat-label">Professional software development experience</span></div>
+              <div class="surface-card mini-stat"><i class="bi bi-layers stat-icon"></i><span class="stat-value stat-word">Full stack</span><span class="stat-label">From UI to backend services</span></div>
+              <div class="surface-card mini-stat mini-stat-wide"><i class="bi bi-cloud-check stat-icon"></i><span class="stat-value stat-word">Cloud & integrations</span><span class="stat-label">Building connected, dependable systems</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="content-section section-shell">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <span class="section-index">02 / TOOLKIT</span>
+          <h2>Technologies I <span class="gradient-text">work with.</span></h2>
+          <p>A practical toolkit across application development, backend systems and cloud.</p>
+        </div>
+        <div class="row g-3">
+          <div class="col-lg-4 col-md-6" data-reveal>
+            <div class="surface-card skill-group h-100">
+              <div class="skill-group-icon"><i class="bi bi-window-stack"></i></div>
+              <h3>Frontend</h3>
+              <p>Building accessible, responsive user experiences.</p>
+              <div class="skill-pills"><span>Angular</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>SCSS</span><span>Bootstrap</span><span>Ionic</span></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-reveal data-reveal-delay="80">
+            <div class="surface-card skill-group h-100">
+              <div class="skill-group-icon"><i class="bi bi-braces"></i></div>
+              <h3>Backend</h3>
+              <p>Designing APIs, services and application logic.</p>
+              <div class="skill-pills"><span>Java</span><span>Spring Boot</span><span>REST APIs</span><span>Python</span></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-reveal data-reveal-delay="160">
+            <div class="surface-card skill-group h-100">
+              <div class="skill-group-icon"><i class="bi bi-cloud-arrow-up"></i></div>
+              <h3>Cloud & DevOps</h3>
+              <p>Working with cloud infrastructure and delivery workflows.</p>
+              <div class="skill-pills"><span>AWS</span><span>Lambda</span><span>S3</span><span>SQS</span><span>DynamoDB</span><span>ECS</span><span>AWS CDK</span><span>Docker</span><span>CI/CD</span><span>Git</span></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-reveal>
+            <div class="surface-card skill-group h-100">
+              <div class="skill-group-icon"><i class="bi bi-database"></i></div>
+              <h3>Databases</h3>
+              <p>Working with relational and NoSQL data stores.</p>
+              <div class="skill-pills"><span>PostgreSQL</span><span>MySQL</span><span>DynamoDB</span></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-reveal data-reveal-delay="80">
+            <div class="surface-card skill-group h-100">
+              <div class="skill-group-icon"><i class="bi bi-activity"></i></div>
+              <h3>Security & reliability</h3>
+              <p>Building secure, observable and maintainable systems.</p>
+              <div class="skill-pills"><span>FIPS requirements</span><span>Encryption</span><span>JWT/JWKS</span><span>Observability</span><span>CloudWatch</span><span>Code reviews</span></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-reveal data-reveal-delay="160">
+            <div class="surface-card skill-group h-100">
+              <div class="skill-group-icon"><i class="bi bi-stars"></i></div>
+              <h3>AI-assisted development</h3>
+              <p>Using AI tools thoughtfully in everyday engineering.</p>
+              <div class="skill-pills"><span>Claude</span><span>GitHub Copilot</span><span>MCP</span><span>Prompt design</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="highlights" class="content-section section-shell">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <span class="section-index">03 / ENGINEERING HIGHLIGHTS</span>
+          <h2>Real problems. <span class="gradient-text">Engineering solutions.</span></h2>
+          <p>Selected examples of engineering work across enterprise software, cloud platforms and full-stack applications.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-6" data-reveal>
+            <article class="surface-card highlight-card h-100">
+              <div class="highlight-top"><span class="highlight-icon"><i class="bi bi-diagram-3"></i></span><span class="highlight-number">01</span></div>
+              <div class="project-overline">BACKEND ENGINEERING · API INTEGRATION</div>
+              <h3>Enterprise System Integrations</h3>
+              <p class="highlight-summary">Connecting external platforms with backend services through reliable, maintainable integration workflows.</p>
+              <h4>The engineering focus</h4>
+              <ul class="impact-list">
+                <li>Implementing and integrating API communication workflows.</li>
+                <li>Handling data transformation, validation and integration errors.</li>
+                <li>Troubleshooting end-to-end behaviour across connected services.</li>
+              </ul>
+              <div class="skill-pills"><span>Java</span><span>Spring Boot</span><span>REST APIs</span><span>Microservices</span></div>
+            </article>
+          </div>
+          <div class="col-lg-6" data-reveal data-reveal-delay="80">
+            <article class="surface-card highlight-card h-100">
+              <div class="highlight-top"><span class="highlight-icon"><i class="bi bi-arrow-left-right"></i></span><span class="highlight-number">02</span></div>
+              <div class="project-overline">AWS · EVENT-DRIVEN SYSTEMS</div>
+              <h3>Event-Driven Data Processing</h3>
+              <p class="highlight-summary">Working with distributed services that ingest, process and route events across cloud-based systems.</p>
+              <h4>The engineering focus</h4>
+              <ul class="impact-list">
+                <li>Building and troubleshooting event ingestion and processing workflows.</li>
+                <li>Working with asynchronous messaging and serverless components.</li>
+                <li>Considering retries, failures and data-processing reliability.</li>
+              </ul>
+              <div class="skill-pills"><span>AWS Lambda</span><span>SQS</span><span>DynamoDB</span><span>Java</span></div>
+            </article>
+          </div>
+          <div class="col-lg-6" data-reveal>
+            <article class="surface-card highlight-card h-100">
+              <div class="highlight-top"><span class="highlight-icon"><i class="bi bi-activity"></i></span><span class="highlight-number">03</span></div>
+              <div class="project-overline">OBSERVABILITY · MONITORING</div>
+              <h3>Cloud Observability & Monitoring</h3>
+              <p class="highlight-summary">Improving visibility into backend service behaviour to support troubleshooting and operational awareness.</p>
+              <h4>The engineering focus</h4>
+              <ul class="impact-list">
+                <li>Instrumenting services with application-level metrics.</li>
+                <li>Monitoring event ingestion and processing behaviour.</li>
+                <li>Supporting dashboards and service-health visibility.</li>
+              </ul>
+              <div class="skill-pills"><span>CloudWatch</span><span>Micrometer</span><span>AWS</span><span>Metrics</span></div>
+            </article>
+          </div>
+          <div class="col-lg-6" data-reveal data-reveal-delay="80">
+            <article class="surface-card highlight-card h-100">
+              <div class="highlight-top"><span class="highlight-icon"><i class="bi bi-shield-lock"></i></span><span class="highlight-number">04</span></div>
+              <div class="project-overline">SECURITY ENGINEERING · CLOUD</div>
+              <h3>FIPS Compliance & Cryptographic Compatibility</h3>
+              <p class="highlight-summary">Contributing to FIPS-related security work across backend services and AWS infrastructure.</p>
+              <h4>The engineering focus</h4>
+              <ul class="impact-list">
+                <li>Investigating cryptographic compatibility and token-validation behaviour in FIPS-enabled environments.</li>
+                <li>Working with secure key and encryption configurations for cloud resources.</li>
+                <li>Implementing infrastructure configuration changes through AWS CDK.</li>
+              </ul>
+              <div class="skill-pills"><span>FIPS</span><span>Go</span><span>AWS KMS</span><span>AWS CDK</span></div>
+            </article>
+          </div>
+          <div class="col-lg-6" data-reveal>
+            <article class="surface-card highlight-card h-100">
+              <div class="highlight-top"><span class="highlight-icon"><i class="bi bi-window-stack"></i></span><span class="highlight-number">05</span></div>
+              <div class="project-overline">FULL STACK · WEB & MOBILE</div>
+              <h3>Full Stack Application Development</h3>
+              <p class="highlight-summary">Developing user-facing application features and connecting them with backend services and data stores.</p>
+              <h4>The engineering focus</h4>
+              <ul class="impact-list">
+                <li>Building frontend features for web and mobile applications.</li>
+                <li>Developing and integrating Spring Boot backend APIs.</li>
+                <li>Working with relational databases and application deployments.</li>
+              </ul>
+              <div class="skill-pills"><span>Angular</span><span>Ionic</span><span>Spring Boot</span><span>PostgreSQL</span></div>
+            </article>
+          </div>
+        </div>
+        <p class="confidential-note highlight-confidential"><i class="bi bi-shield-lock me-2"></i>These highlights summarize professional experience at a high level. Internal system names, customer details and proprietary implementation information are intentionally excluded.</p>
+      </div>
+    </section>
+
+    <section id="experience" class="content-section section-shell">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <span class="section-index">04 / EXPERIENCE</span>
+          <h2>Where I've <span class="gradient-text">grown.</span></h2>
+          <p>Experience shaped by collaboration, ownership and continuous improvement.</p>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item" data-reveal>
+            <div class="timeline-marker"><span></span></div>
+            <div class="surface-card timeline-card">
+              <div class="timeline-meta"><span class="timeline-period">SEPTEMBER 2025 — NOVEMBER 2026</span><span class="timeline-type">Enterprise software · Backend & cloud</span></div>
+              <h3>NiCE</h3>
+              <p class="timeline-role">Software Developer</p>
+              <p>Contributing to backend services and cloud-based integrations in an enterprise software environment.</p>
+              <ul class="impact-list">
+                <li>Working with Java-based services, integrations and distributed application workflows.</li>
+                <li>Contributing to AWS infrastructure, observability and deployment-related improvements.</li>
+                <li>Collaborating across engineering and platform teams to troubleshoot and improve service reliability.</li>
+              </ul>
+              <div class="skill-pills"><span>Java</span><span>AWS</span><span>Microservices</span><span>Integrations</span><span>Observability</span></div>
+            </div>
+          </article>
+          <article class="timeline-item" data-reveal>
+            <div class="timeline-marker"><span></span></div>
+            <div class="surface-card timeline-card">
+              <div class="timeline-meta"><span class="timeline-period">NOVEMBER 2022 — SEPTEMBER 2025</span><span class="timeline-type">Web & mobile applications</span></div>
+              <h3>Xcaliber Infotech</h3>
+              <p class="timeline-role">Software Developer</p>
+              <p>Worked on web and mobile application development, contributing across frontend and backend components.</p>
+              <ul class="impact-list">
+                <li>Developed application features using Angular, Ionic and Java Spring Boot.</li>
+                <li>Worked with PostgreSQL and integrated application capabilities such as notifications and data visualizations.</li>
+                <li>Contributed to build-tool and logging upgrades, code reviews and application improvements.</li>
+              </ul>
+              <div class="skill-pills"><span>Angular</span><span>Ionic</span><span>Spring Boot</span><span>PostgreSQL</span><span>Chart.js</span></div>
+            </div>
+          </article>
+        </div>
+        <p class="confidential-note"><i class="bi bi-shield-lock me-2"></i>Enterprise work is described at a high level to respect company confidentiality.</p>
+      </div>
+    </section>
+
+    <section id="education" class="content-section section-shell">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-5" data-reveal>
+            <div class="section-heading section-heading-compact">
+              <span class="section-index">05 / EDUCATION</span>
+              <h2>Learning is <span class="gradient-text">ongoing.</span></h2>
+              <p>A strong foundation in application development and computer science.</p>
+            </div>
+          </div>
+          <div class="col-lg-7" data-reveal data-reveal-delay="100">
+            <div class="education-list">
+              <div class="surface-card education-card">
+                <div class="education-icon"><i class="bi bi-mortarboard"></i></div>
+                <div><span class="project-overline">POSTGRADUATE · JANUARY 2022 — JULY 2024</span><h3>MSc (Computer Application)</h3><p>MIT Arts, Commerce & Science College (MITACSC), Alandi, Pune</p></div>
+              </div>
+              <div class="surface-card education-card">
+                <div class="education-icon"><i class="bi bi-mortarboard"></i></div>
+                <div><span class="project-overline">UNDERGRADUATE · 2019 — 2022</span><h3>B.Sc. Computer Science</h3><p>Nowrosjee Wadia College Arts, Science, Pune 01</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section section-shell">
+      <div class="container" data-reveal>
+        <div class="contact-panel">
+          <span class="section-index">06 / GET IN TOUCH</span>
+          <h2>Have a good idea?<br><span class="gradient-text">Let's build it.</span></h2>
+          <p>I'm open to connecting with engineering teams and exploring opportunities across backend, full-stack and cloud engineering.</p>
+          <a class="btn btn-accent" href="mailto:shreedevi031@gmail.com">Say hello <i class="bi bi-arrow-up-right ms-2"></i></a>
+          <div class="contact-socials">
+            <a href="mailto:shreedevi031@gmail.com"><i class="bi bi-envelope"></i> Email</a>
+            <a href="https://www.linkedin.com/in/shreedevi-patil-tech/" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/shree031" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <a class="footer-brand" href="#home">Shreedevi Patil</a>
+      <span>Designed & built by Shreedevi Patil</span>
+      <span>© <span id="currentYear"></span> All rights reserved.</span>
     </div>
-</section>
+  </footer>
 
-<!--    Work-experience-->
-<section id="work" class="center flex-column pt-5 hidden-section">
-    <h2><span>Work experience<i class="bi bi-briefcase-fill ps-3"></i></span></h2>
-    <div class="center w-100">
-        <div id="carouselExampleIndicators" class="carousel slide box w-100" data-bs-ride="carousel">
-            <div class="carousel-indicators mb-1">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                        aria-label="Slide 5"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
-                        aria-label="Slide 6"></button>
-            </div>
+  <button class="back-to-top" type="button" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
 
-            <div class="carousel-inner">
-                <div class="mt-4 text-center">
-                    <h2>Xcaliber Infotech <i class="bi bi-buildings"></i></h2>
-                    <p>Software developer (Nov-2022 - Present)</p>
-                </div>
-                <hr class="border border-2 mt-2 mb-0">
-                <div class="carousel-item active">
-                    <img draggable=false src="Assets/images/reCaptcha.png" class="" alt="Image 1">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Integrated reCAPTCHA in the Web App</h5>
-                        <p>Ensured security by seamlessly integrating reCAPTCHA into the web application, protecting
-                            against automated threats.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img draggable=false src="Assets/images/Notification.png" class="" alt="Image 5">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Integrated Push Notification [Ionic in Android and iOS]</h5>
-                        <p>From code to connection—implemented push notifications on both Android and iOS,
-                            delivering a consistent user experience across platforms.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img draggable=false src="Assets/images/Chart.js.png" class="" alt="Image 2">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Using Chart.js Visualized Data</h5>
-                        <p>Enhanced data analysis with dynamic Chart.js visualizations, turning complex data into
-                            actionable insights.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img draggable=false src="Assets/images/Maven-Gradle.png" class="" alt="Image 3">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Upgraded Build Tool from Maven to Gradle</h5>
-                        <p>Streamlined build processes by upgrading from Maven to Gradle, boosting efficiency and
-                            flexibility in project management.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img draggable=false src="Assets/images/log4j.png" class="" alt="Image 4">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Upgraded Log4j to Log4j2</h5>
-                        <p>Improved logging capabilities by upgrading from Log4j to Log4j2, enhancing
-                            performance and security.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img draggable=false src="Assets/images/code.png" class="" alt="Image 6">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Contributed to code reviews</h5>
-                        <p>Ensured code quality and fostered collaboration through thorough and constructive
-                            code reviews.</p>
-                    </div>
-                </div>
-            </div>
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
-</section>
-
-
-<!--    Projects-->
-<section id="project" class="py-5 pb-4 hidden-section">
-    <h2 class="text-center">
-        <span>Projects <i class="bi bi-code-slash ps-3"></i></span>
-    </h2>
-
-    <div class="d-flex flex-wrap justify-content-around w-100">
-        <div class="box project-card card text-white">
-            <div class="h-100 py-2 w-100">
-                <img src="Assets/images/foodvilla.png" class="card-img-top project-img" alt="FoodVilla">
-                <div class="card-body w-100">
-                    <h5 class="card-title">FoodVilla</h5>
-                    <p><i>Angular, Spring Boot, Bootstrap, Postgresql</i></p>
-                    <p class="card-text">A full-stack ingredient ordering and recipe viewing platform with user authentication, search, and cart
-                        features, built with Angular and Spring Boot.</p>
-                    <div class="d-flex flex-wrap gap-2 pt-2">
-                        <a href="https://github.com/shree031/Foodvilla-Angular" target="_blank"
-                           class="btn btn-outline-light btn-sm">
-                            Frontend <i class="bi bi-github ps-1"></i>
-                        </a>
-                        <a href="https://github.com/shree031/Foodvilla-SpringBoot" target="_blank"
-                           class="btn btn-outline-light btn-sm">
-                            Backend <i class="bi bi-github ps-1"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="box project-card card text-white">
-            <div class="h-100 py-2">
-                <img src="Assets/images/portfolio.png" class="card-img-top project-img" alt="Portfolio">
-                <div class="card-body">
-                    <h5 class="card-title">Portfolio Website</h5>
-                    <p><i>HTML, CSS, JavaScript, Bootstrap</i></p>
-                    <p class="card-text">
-                        A personal portfolio website highlighting my technical skills, professional experience, and featured projects, crafted with a responsive and modern design across all devices.
-                    </p>
-                    <div class="d-flex flex-wrap gap-2 pt-2">
-                        <a href="https://github.com/shree031/Portfolio" target="_blank"
-                           class="btn btn-outline-light btn-sm">
-                            View Code <i class="bi bi-github ps-1"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="box project-card card text-white">
-            <div class="h-100 py-2">
-                <img src="Assets/images/adblocker.png" class="card-img-top project-img" alt="Ad Blocker">
-                <div class="card-body">
-                    <h5 class="card-title">Ad Blocker Extension</h5>
-                    <p><i>JavaScript, HTML, CSS, Manifest V3</i></p>
-                    <p class="card-text">Chrome extension that blocks ads and trackers to improve browsing
-                        experience.</p>
-                    <div class="d-flex flex-wrap gap-2 pt-2">
-                        <a href="https://github.com/shree031/Ad_blocker-Chrome-extension" target="_blank"
-                           class="btn btn-outline-light btn-sm">
-                            View Code <i class="bi bi-github ps-1"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="box project-card card text-white">
-            <div class="h-100 py-2">
-                <img src="Assets/images/memegenerator.png" class="card-img-top project-img" alt="Meme Generator">
-                <div class="card-body">
-                    <h5 class="card-title">Meme Generator Extension</h5>
-                    <p><i>JavaScript, HTML, CSS, Meme API</i></p>
-                    <p class="card-text">Fun Chrome extension that fetches random memes and allows users to customize
-                        and download them.</p>
-                    <div class="d-flex flex-wrap gap-2 pt-2">
-                        <a href="https://github.com/shree031/Programmer-memes_Chrome-extension" target="_blank"
-                           class="btn btn-outline-light btn-sm">
-                            View Code <i class="bi bi-github ps-1"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<footer class="footer p-2 mt-5" id="contact">
-    <div class="icon-style center flex-column">
-        <span>
-            -: Designed by Shreedevi patil :-
-        </span>
-    </div>
-</footer>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/TextPlugin.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-<script src="script.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+          crossorigin="anonymous"></script>
+  <script src="script.js" defer></script>
 </body>
-
 </html>
